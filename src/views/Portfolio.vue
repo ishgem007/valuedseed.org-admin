@@ -12,12 +12,14 @@
         </div>
       </div>
     </main>
+    <ExpModal />
 </div>
 </template>
 <script>
 import Header from '../components/Header.vue'
 import Sidebar from '../components/Sidebar.vue'
 import ProfilePortfolio from '../components/ProfilePortfolio.vue'
+import ExpModal from '../components/ExpModal.vue'
 import Footer from '../components/Footer.vue'
 export default {
   name:'Profile',
@@ -25,6 +27,7 @@ export default {
     Header,
     Sidebar,
     ProfilePortfolio,
+    ExpModal,
     Footer
   }
 }

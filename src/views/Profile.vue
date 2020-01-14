@@ -6,7 +6,7 @@
         <Sidebar />
         <div class="col g-ml-45 g-ml-0--lg g-pb-65--md">
           <div class="g-bg-lightblue-v10-opacity-0_5 g-pa-20">
-              <GeneralInfo />
+              <AboutComponent/>
           </div>
           <Footer />
         </div>
@@ -17,16 +17,23 @@
 <script>
 import Header from '../components/Header.vue'
 import Sidebar from '../components/Sidebar.vue'
-import GeneralInfo from '../components/GeneralInfo.vue'
+import AboutComponent from '../components/AboutComponent.vue'
 import Footer from '../components/Footer.vue'
+
+// let $ = JQuery
 export default {
   name:'Profile',
   components:{
     Header,
     Sidebar,
-    GeneralInfo,
+    AboutComponent,
     Footer
+  },
+  mounted() {
+     
+  },
+  destroyed(){
+     
   }
 }
 </script>
-  

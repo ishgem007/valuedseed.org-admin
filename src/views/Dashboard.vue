@@ -12,12 +12,13 @@
                 <!-- Other Profile Info -->
               <Projects />
                 <!-- End Other Profile Info -->
-            
+              
           </div>
           <Footer />
         </div>
       </div>
     </main>
+    <NewChapter />
 </div>
 </template>
 <script>
@@ -26,6 +27,9 @@ import Sidebar from '../components/Sidebar.vue'
 import Panel from '../components/Panel.vue'
 import Projects from '../components/Projects.vue'
 import Footer from '../components/Footer.vue'
+import NewChapter from '../components/ChapterModal.vue'
+
+// let $ = JQuery
 export default {
   name:'Dashboard',
   components:{
@@ -33,8 +37,14 @@ export default {
     Sidebar,
     Panel,
     Projects,
-    Footer
+    Footer,
+    NewChapter
+  },
+  mounted() {
+     
+  },
+  destroyed(){
+     
   }
 }
 </script>
-  

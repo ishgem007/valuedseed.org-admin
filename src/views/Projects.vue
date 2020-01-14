@@ -12,12 +12,14 @@
         </div>
       </div>
     </main>
+    <ChapterModal />
 </div>
 </template>
 <script>
 import Header from '../components/Header.vue'
 import Sidebar from '../components/Sidebar.vue'
 import ProjectsComponent from '../components/ProjectsComponent.vue'
+import ChapterModal from '../components/ChapterModal.vue'
 import Footer from '../components/Footer.vue'
 export default {
   name:'Projects',
@@ -25,7 +27,11 @@ export default {
     Header,
     Sidebar,
     ProjectsComponent,
+    ChapterModal,
     Footer
+  },
+  mounted(){
+    
   }
 }
 </script>

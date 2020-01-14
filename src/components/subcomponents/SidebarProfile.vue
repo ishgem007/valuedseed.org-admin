@@ -8,14 +8,14 @@
             <!-- User Information -->
             <section class="text-center g-mb-30 g-mb-50--md">
               <div class="d-inline-block g-pos-rel g-mb-20">
-                <router-link
+                <a
                   class="u-badge-v2--lg u-badge--bottom-right g-width-32 g-height-32 g-bg-secondary g-bg-primary--hover g-transition-0_3 g-mb-20 g-mr-20"
-                  to="/upload-profile-photo"
+                  href="/upload-profile-photo"
                 >
                   <i
                     class="hs-admin-pencil g-absolute-centered g-font-size-16 g-color-white"
                   ></i>
-                </router-link>
+                </a>
                 <img
                   class="img-fluid rounded-circle"
                   src="assets/assets/img-temp/130x130/img1.jpg"
@@ -58,9 +58,9 @@
             <section>
               <ul class="list-unstyled mb-0">
                 <li class="g-brd-top g-brd-gray-light-v7 mb-0">
-                  <router-link
+                  <a
                     class="d-flex align-items-center u-link-v5 g-parent g-py-15"
-                    to="/profile"
+                    href="/profile"
                   >
                     <span
                       class="g-font-size-18 g-color-gray-light-v6 g-color-primary--parent-hover g-color-primary--parent-active g-mr-15"
@@ -71,12 +71,12 @@
                       class="g-color-gray-dark-v6 g-color-primary--parent-hover g-color-primary--parent-active"
                       >Profile Information</span
                     >
-                  </router-link>
+                  </a>
                 </li>
                 <li class="g-brd-top g-brd-gray-light-v7 mb-0">
-                  <router-link
+                  <a
                     class="d-flex align-items-center u-link-v5 g-parent g-py-15"
-                    to="/portfolio"
+                    href="/portfolio"
                   >
                     <span
                       class="g-font-size-18 g-color-gray-light-v6 g-color-primary--parent-hover g-color-primary--parent-active g-mr-15"
@@ -87,28 +87,11 @@
                       class="g-color-gray-dark-v6 g-color-primary--parent-hover g-color-primary--parent-active"
                       >Portfolio</span
                     >
-                  </router-link>
-                </li>
+                  </a>
                 <li class="g-brd-top g-brd-gray-light-v7 mb-0">
-                  <router-link
+                  <a
                     class="d-flex align-items-center u-link-v5 g-parent g-py-15"
-                    to="/interest"
-                  >
-                    <span
-                      class="g-font-size-18 g-color-gray-light-v6 g-color-primary--parent-hover g-color-primary--parent-active g-mr-15"
-                    >
-                      <i class="hs-admin-medall"></i>
-                    </span>
-                    <span
-                      class="g-color-gray-dark-v6 g-color-primary--parent-hover g-color-primary--parent-active"
-                      >Interests</span
-                    >
-                  </router-link>
-                </li>
-                <li class="g-brd-top g-brd-gray-light-v7 mb-0">
-                  <router-link
-                    class="d-flex align-items-center u-link-v5 g-parent g-py-15"
-                    to="/transaction"
+                    href="/transaction"
                   >
                     <span
                       class="g-font-size-18 g-color-gray-light-v6 g-color-primary--parent-hover g-color-primary--parent-active g-mr-15"
@@ -119,12 +102,12 @@
                       class="g-color-gray-dark-v6 g-color-primary--parent-hover g-color-primary--parent-active"
                       >Transactions</span
                     >
-                  </router-link>
+                  </a>
                 </li>
                 <li class="g-brd-top g-brd-gray-light-v7 mb-0">
-                  <router-link
+                  <a
                     class="d-flex align-items-center u-link-v5 g-parent g-py-15"
-                    to="/payment-methods"
+                    href="/payment-methods"
                   >
                     <span
                       class="g-font-size-18 g-color-gray-light-v6 g-color-primary--parent-hover g-color-primary--parent-active g-mr-15"
@@ -133,9 +116,9 @@
                     </span>
                     <span
                       class="g-color-gray-dark-v6 g-color-primary--parent-hover g-color-primary--parent-active"
-                      >Payment Methods</span
+                      >Account Details</span
                     >
-                  </router-link>
+                  </a>
                 </li>
               </ul>
             </section>

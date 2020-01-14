@@ -7,13 +7,13 @@
                   <div class="media">
                     <div class="d-flex g-mr-15">
                       <div class="u-header-dropdown-icon-v1 g-pos-rel g-width-60 g-height-60 g-bg-lightblue-v3 g-font-size-18 g-font-size-24--md g-color-white rounded-circle">
-                        <i class="hs-admin-briefcase g-absolute-centered"></i>
+                        <i class="hs-admin-book g-absolute-centered"></i>
                       </div>
                     </div>
 
                     <div class="media-body align-self-center">
                       <div class="d-flex align-items-center g-mb-5">
-                        <span class="g-font-size-24 g-line-height-1 g-color-black">99.9%</span>
+                        <span class="g-font-size-24 g-line-height-1 g-color-black">99</span>
                         <span class="d-flex align-self-center g-font-size-0 g-ml-5 g-ml-10--md">
                       <i class="g-fill-gray-dark-v9">
                         <svg width="12px" height="20px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -46,7 +46,7 @@
                     </span>
                       </div>
 
-                      <h6 class="g-font-size-16 g-font-weight-300 g-color-gray-dark-v6 mb-0">Projects Done</h6>
+                      <h6 class="g-font-size-16 g-font-weight-300 g-color-gray-dark-v6 mb-0">Chapters</h6>
                     </div>
                   </div>
                 </div>
@@ -61,7 +61,7 @@
                   <div class="media">
                     <div class="d-flex g-mr-15">
                       <div class="u-header-dropdown-icon-v1 g-pos-rel g-width-60 g-height-60 g-bg-teal-v2 g-font-size-18 g-font-size-24--md g-color-white rounded-circle">
-                        <i class="hs-admin-check-box g-absolute-centered"></i>
+                        <i class="hs-admin-write g-absolute-centered"></i>
                       </div>
                     </div>
 
@@ -100,7 +100,7 @@
                     </span>
                       </div>
 
-                      <h6 class="g-font-size-16 g-font-weight-300 g-color-gray-dark-v6 mb-0">Total Tasks</h6>
+                      <h6 class="g-font-size-16 g-font-weight-300 g-color-gray-dark-v6 mb-0">Total Topics</h6>
                     </div>
                   </div>
                 </div>
@@ -121,7 +121,7 @@
 
                     <div class="media-body align-self-center">
                       <div class="d-flex align-items-center g-mb-5">
-                        <span class="g-font-size-24 g-line-height-1 g-color-black">$124.2</span>
+                        <span class="g-font-size-24 g-line-height-1 g-color-black">₦1240.2</span>
                         <span class="d-flex align-self-center g-font-size-0 g-ml-5 g-ml-10--md">
                       <i class="g-fill-red">
                         <svg width="12px" height="20px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -154,7 +154,7 @@
                     </span>
                       </div>
 
-                      <h6 class="g-font-size-16 g-font-weight-300 g-color-gray-dark-v6 mb-0">Projects Done</h6>
+                      <h6 class="g-font-size-16 g-font-weight-300 g-color-gray-dark-v6 mb-0">Income</h6>
                     </div>
                   </div>
                 </div>
@@ -208,7 +208,7 @@
                     </span>
                       </div>
 
-                      <h6 class="g-font-size-16 g-font-weight-300 g-color-gray-dark-v6 mb-0">New Clients</h6>
+                      <h6 class="g-font-size-16 g-font-weight-300 g-color-gray-dark-v6 mb-0">Students</h6>
                     </div>
                   </div>
                 </div>

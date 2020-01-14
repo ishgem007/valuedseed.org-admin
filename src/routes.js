@@ -3,13 +3,18 @@ import VueRouter from 'vue-router'
 
 
 import Dashboard from '@/views/Dashboard'
-import Profile from '@/views/Profile'
+// import Profile from '@/views/Profile'
 import Interest from '@/views/Interest'
 import Portfolio from '@/views/Portfolio'
 import Transaction from '@/views/Transaction'
 import PaymentMethods from '@/views/PaymentMethods'
 import Photo from '@/views/Photo'
 import Projects from '@/views/Projects'
+import ChangePassword from '@/views/ChangePassword'
+import Profile from '@/views/Profile'
+import EditProfile from '@/views/EditProfile'
+import Notification from '@/views/Notification'
+
 
 Vue.use(VueRouter)
 
@@ -25,6 +30,11 @@ export default new VueRouter({
             path: '/profile',
             name: 'Profile',
             component: Profile
+        },
+        {
+            path: '/edit-profile',
+            name: 'EditProfile',
+            component: EditProfile
         },
         {
             path: '/Interest',
@@ -55,6 +65,16 @@ export default new VueRouter({
             path: '/all-projects',
             name: 'Projects',
             component: Projects
+        },
+        {
+            path: '/change-password',
+            name: 'ChangePassword',
+            component: ChangePassword
+        },
+        {
+            path: '/notification',
+            name: 'Notification',
+            component: Notification
         }
     ],
     mode: 'history',

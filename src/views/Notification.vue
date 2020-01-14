@@ -5,9 +5,7 @@
       <div class="row no-gutters g-pos-rel g-overflow-x-hidden">
         <Sidebar />
         <div class="col g-ml-45 g-ml-0--lg g-pb-65--md">
-          <div class="g-bg-lightblue-v10-opacity-0_5 g-pa-20">
-              <ProfilePhoto />
-          </div>
+            <NotificationComponent/>
           <Footer />
         </div>
       </div>
@@ -17,19 +15,23 @@
 <script>
 import Header from '../components/Header.vue'
 import Sidebar from '../components/Sidebar.vue'
-import ProfilePhoto from '../components/ProfilePhoto.vue'
 import Footer from '../components/Footer.vue'
+import NotificationComponent from '../components/NotificationComponent.vue'
+
+// let $ = JQuery
 export default {
-  name:'Photo',
+  name:'Notification',
   components:{
     Header,
     Sidebar,
-    ProfilePhoto,
-    Footer
+    Footer,
+    NotificationComponent
   },
-  mounted(){
-  
+  mounted() {
+     
+  },
+  destroyed(){
+     
   }
 }
 </script>
-  

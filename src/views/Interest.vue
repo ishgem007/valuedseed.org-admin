@@ -26,6 +26,9 @@ export default {
     Sidebar,
     ProfileInterest,
     Footer
+  },
+  mounted(){
+    
   }
 }
 </script>

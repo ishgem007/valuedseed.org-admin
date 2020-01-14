@@ -32,6 +32,9 @@ export default {
   name: "ProfilePhoto",
   components: {
     SidebarProfile
-  }
+  },
+  mounted() {
+      
+    }
 };
 </script>

@@ -7,7 +7,10 @@ import Vuex from 'vuex'
 import VueNoty from 'vuejs-noty'
 import 'vuejs-noty/dist/vuejs-noty.css'
 import router from  './routes'
+import JQuery from 'jquery';
+
  
+
 Vue.use(VueNoty, {
   timeout: 4000,
   progressBar: true,
@@ -21,5 +24,6 @@ Vue.config.productionTip = false
 
 new Vue({
   router,
+  JQuery,
   render: h => h(App),
 }).$mount('#app')

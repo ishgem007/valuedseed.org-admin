@@ -6,7 +6,7 @@
         <Sidebar />
         <div class="col g-ml-45 g-ml-0--lg g-pb-65--md">
           <div class="g-bg-lightblue-v10-opacity-0_5 g-pa-20">
-              <ProfilePhoto />
+              <GeneralInfo />
           </div>
           <Footer />
         </div>
@@ -17,19 +17,17 @@
 <script>
 import Header from '../components/Header.vue'
 import Sidebar from '../components/Sidebar.vue'
-import ProfilePhoto from '../components/ProfilePhoto.vue'
+import GeneralInfo from '../components/GeneralInfo.vue'
 import Footer from '../components/Footer.vue'
 export default {
-  name:'Photo',
+  name:'EditProfile',
   components:{
     Header,
     Sidebar,
-    ProfilePhoto,
+    GeneralInfo,
     Footer
-  },
-  mounted(){
-  
   }
+      
 }
 </script>
   
