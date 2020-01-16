@@ -8,7 +8,7 @@
 // import Portfolio from './views/Portfolio.vue'
 export default {
   name: 'app'
-}
+};
 </script>
 
 <style>
