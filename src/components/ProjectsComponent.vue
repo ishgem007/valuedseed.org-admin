@@ -976,7 +976,7 @@
                   <span class="d-block g-font-weight-300 g-font-size-16 g-color-gray-dark-v6 g-color-secondary--parent-hover">Start New Project</span>
                   </span>
                 </a>
-              </div>
+              </div> 
         </div>
       </div>
     </div>
@@ -987,5 +987,5 @@
 <script>
 export default {
     name:"ProjectsComponent"
-}
+};
 </script>
