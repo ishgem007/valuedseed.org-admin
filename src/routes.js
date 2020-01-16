@@ -15,6 +15,12 @@ import Profile from '@/views/Profile'
 import EditProfile from '@/views/EditProfile'
 import Notification from '@/views/Notification'
 
+import Newuser from '@/views/Newuser'
+import Allusers from '@/views/Allusers'
+import Bankdetails from '@/views/Bankdetails'
+import Newnotification from '@/views/Newnotification'
+import Allnotification from '@/views/Allnotification'
+
 
 Vue.use(VueRouter)
 
@@ -72,9 +78,34 @@ export default new VueRouter({
             component: ChangePassword
         },
         {
+            path: '/newuser',
+            name: 'Newuser',
+            component: Newuser
+        },
+        {
+            path: '/allusers',
+            name: 'Allusers',
+            component: Allusers
+        },
+        {
+            path: '/bankdetails',
+            name: 'Bankdetails',
+            component: Bankdetails
+        },
+        {
             path: '/notification',
             name: 'Notification',
             component: Notification
+        },
+        {
+            path: '/newnotification',
+            name: 'Newnotification',
+            component: Newnotification
+        },
+        {
+            path: '/allnotification',
+            name: 'Allnotification',
+            component: Allnotification
         }
     ],
     mode: 'history',
