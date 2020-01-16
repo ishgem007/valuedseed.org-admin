@@ -8,6 +8,8 @@
           <div class="g-bg-lightblue-v10-opacity-0_5 g-pa-20">
               <!-- Panel score Card -->
               <Panel />
+
+               <AdminPanel />
                 <!-- End Profile Sidebar Nav -->
                 <!-- Other Profile Info -->
               <Projects />
@@ -28,6 +30,7 @@ import Panel from '../components/Panel.vue'
 import Projects from '../components/Projects.vue'
 import Footer from '../components/Footer.vue'
 import NewChapter from '../components/ChapterModal.vue'
+import AdminPanel from '../components/adminPanel.vue'
 
 // let $ = JQuery
 export default {
@@ -38,7 +41,8 @@ export default {
     Panel,
     Projects,
     Footer,
-    NewChapter
+    NewChapter,
+    AdminPanel
   },
   mounted() {
      

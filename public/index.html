@@ -40,6 +40,9 @@
 
   <link rel="stylesheet" href="assets/b-assets/vendor/hamburgers/hamburgers.min.css">
 
+
+  <link rel="stylesheet" href="assets/assets/vendor/summernote-themes/unify-lite.css">
+
   <!-- CSS Unify -->
   <link rel="stylesheet" href="assets/assets/css/unify-admin.css">
 
@@ -94,6 +97,7 @@
   <script src="assets/assets/vendor/chartist-js/chartist.min.js"></script>
   <script src="assets/assets/vendor/chartist-js-tooltip/chartist-plugin-tooltip.js"></script>
   <script src="assets/assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+  <script src="assets/assets/vendor/summernote/dist/summernote-bs4.min.js"></script>
 
   <!-- JS Unify -->
   <script src="assets/b-assets/js/hs.core.js"></script>
@@ -103,6 +107,8 @@
   <script src="assets/b-assets/js/components/hs.datepicker.js"></script>
   <script src="assets/b-assets/js/components/hs.dropdown.js"></script>
   <script src="assets/b-assets/js/components/hs.scrollbar.js"></script>
+
+  <script src="assets/assets/js/components/hs.text-editor.js"></script>
   <script src="assets/b-assets/js/helpers/hs.focus-state.js"></script>
   <script src="assets/assets/js/components/hs.area-chart.js"></script>
   <script src="assets/assets/js/components/hs.donut-chart.js"></script>
@@ -173,7 +179,7 @@
       // initialization of custom scrollbar
       $.HSCore.components.HSScrollBar.init($('.js-custom-scroll'));
   
-        // initialization of forms
+      // initialization of forms
       $.HSCore.components.HSFileAttachment.init('.js-file-attachment');
 
       // initialization of popups
@@ -201,7 +207,11 @@
       // initialization of datatables
       $.HSCore.components.HSDatatables.init('.js-datatable');
 
+       // initialization of forms
+      //$.HSCore.components.HSCountQty.init('.js-quantity');
 
+      // initialization of text editors
+      $.HSCore.components.HSTextEditor.init('.js-text-editor');
     });
   </script>
 </body>
