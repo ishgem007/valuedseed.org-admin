@@ -8,7 +8,8 @@ import VueNoty from 'vuejs-noty'
 import 'vuejs-noty/dist/vuejs-noty.css'
 import router from  './routes'
 import JQuery from 'jquery';
-
+// import VoerroTagsInput from '@voerro/vue-tagsinput';
+// Vue.component('tags-input', VoerroTagsInput);
  
 
 Vue.use(VueNoty, {

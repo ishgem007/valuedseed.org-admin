@@ -12,13 +12,13 @@
                 <!-- Other Profile Info -->
               <Projects />
                 <!-- End Other Profile Info -->
-              
           </div>
           <Footer />
         </div>
       </div>
     </main>
     <NewChapter />
+    <EditModal />
 </div>
 </template>
 <script>
@@ -28,6 +28,7 @@ import Panel from '../components/Panel.vue'
 import Projects from '../components/Projects.vue'
 import Footer from '../components/Footer.vue'
 import NewChapter from '../components/ChapterModal.vue'
+import EditModal from '../components/EditModal.vue'
 
 // let $ = JQuery
 export default {
@@ -38,7 +39,8 @@ export default {
     Panel,
     Projects,
     Footer,
-    NewChapter
+    NewChapter,
+    EditModal
   },
   mounted() {
      

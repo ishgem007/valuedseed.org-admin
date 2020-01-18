@@ -5,37 +5,33 @@
       <div class="row no-gutters g-pos-rel g-overflow-x-hidden">
         <Sidebar />
         <div class="col g-ml-45 g-ml-0--lg g-pb-65--md">
-          <div class="g-bg-lightblue-v10-opacity-0_5 g-pa-20">
-              <ProjectsComponent />
-          </div>
+            <SubjectByTeacherComponent title="Ongoing Subjects (17)" subtitle="Subjects whose content are yet to be completed"/>
           <Footer />
         </div>
       </div>
     </main>
-    <ChapterModal />
-     <EditModal />
 </div>
 </template>
 <script>
 import Header from '../components/Header.vue'
 import Sidebar from '../components/Sidebar.vue'
-import ProjectsComponent from '../components/ProjectsComponent.vue'
-import ChapterModal from '../components/ChapterModal.vue'
-import EditModal from '../components/EditModal.vue'
 import Footer from '../components/Footer.vue'
+import SubjectByTeacherComponent from '../components/SubjectByTeacherComponent.vue'
+
+// let $ = JQuery
 export default {
-  name:'Projects',
+  name:'OngoingSubject',
   components:{
     Header,
     Sidebar,
-    ProjectsComponent,
-    ChapterModal,
-    EditModal,
-    Footer
+    Footer,
+    SubjectByTeacherComponent
   },
-  mounted(){
-    
+  mounted() {
+     
+  },
+  destroyed(){
+     
   }
-}
+};
 </script>
-  

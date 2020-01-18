@@ -15,7 +15,7 @@
                 <i class="hs-admin-info"></i>
               </div>
             </div>
-            <div>Hi, welcome to Unify. This is example of Toastr notification box.</div>
+            <div>Hi, Frank. This is example of a new notification box.</div>
           </div>
         </div>
       </div>

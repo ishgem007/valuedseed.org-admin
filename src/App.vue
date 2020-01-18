@@ -8,7 +8,22 @@
 // import Portfolio from './views/Portfolio.vue'
 export default {
   name: 'app'
-}
+ //  components: { "v-tags-input": VoerroTagsInput },
+ //  data(){
+	//   	return{
+	// 	        selectedTags: [
+	// 	            { key: 'web-development', value: 'Web Development' },
+	// 	            { key: 'php', value: 'PHP' },
+	// 	            { key: 'javascript', value: 'JavaScript' },
+	// 	        ]
+	//       	}
+ //    },
+	// methods:{
+	//     setSelectedTags() {
+	//         this.selectedTags = [{ key: 'php', value: 'PHP' }];
+	//     }
+	// }
+};
 </script>
 
 <style>

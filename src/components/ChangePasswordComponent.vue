@@ -1,5 +1,7 @@
 <template>
-  <div class="col g-ml-45 g-ml-0--lg g-pb-65--md g-bg-white">
+  <div class="row">
+    <div class="col-xl-12">
+      <div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30">
     <div class="g-pa-20">
       <div class="row">
         <SidebarProfile />
@@ -77,6 +79,8 @@
       </div>
     </div>
   </div>
+</div>
+</div>
 </template>
 <script>
 import SidebarProfile from "./subcomponents/SidebarProfile";
