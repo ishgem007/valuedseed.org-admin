@@ -88,22 +88,7 @@
                       >Portfolio</span
                     >
                   </a>
-                <li class="g-brd-top g-brd-gray-light-v7 mb-0">
-                  <a
-                    class="d-flex align-items-center u-link-v5 g-parent g-py-15"
-                    href="/transaction"
-                  >
-                    <span
-                      class="g-font-size-18 g-color-gray-light-v6 g-color-primary--parent-hover g-color-primary--parent-active g-mr-15"
-                    >
-                      <i class="hs-admin-wallet"></i>
-                    </span>
-                    <span
-                      class="g-color-gray-dark-v6 g-color-primary--parent-hover g-color-primary--parent-active"
-                      >Transactions</span
-                    >
-                  </a>
-                </li>
+                
                 <li class="g-brd-top g-brd-gray-light-v7 mb-0">
                   <a
                     class="d-flex align-items-center u-link-v5 g-parent g-py-15"

@@ -20,9 +20,9 @@
       </ul>
     </div>
     <!-- end of Breadcrumb -->
-    <div class="col g-ml-45 g-ml-0--lg g-pb-65--md g-bg-white">
-      <div class="g-pa-20">
-        <div class="row">
+    <div class="row">
+    <div class="col-xl-12">
+      <div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30">
             <div class="g-pa-20">
             <div class="media">
               <div class="d-flex align-self-center">
@@ -65,27 +65,577 @@
                           <div id="dropDown1" class="u-shadow-v31 g-pos-abs g-right-0 g-bg-white u-dropdown--jquery-slide u-dropdown--hidden" aria-labelledby="dropDown1Invoker" style="display: none;">
                             <ul class="list-unstyled g-nowrap mb-0">
                               <li>
-                                <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <a class="d-flex align-items-center js-fancybox u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!" data-src="#edit-form">
                                   <i class="hs-admin-pencil g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
                                   Edit
                                 </a>
                               </li>
                               <li>
                                 <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
-                                  <i class="hs-admin-archive g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
-                                  Archive
+                                  <i class="hs-admin-trash g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                  Delete
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <h3 class="g-font-weight-300 g-font-size-20 g-color-black g-mb-15"> Sub Topic Title</h3>
+                    <span class="u-tags-v1 text-center g-width-130 g-brd-around g-brd-primary g-bg-primary g-color-white g-rounded-50 g-py-4 g-px-15">Declined</span>
+                  </header>
+
+                  <hr class="d-flex g-brd-gray-light-v7 g-mx-20 g-mx-30--sm my-0">
+
+                  <div class="card-block d-flex justify-content-between g-px-20 g-px-30--sm g-py-15 g-py-20--sm">
+                    <div>
+                      <h4 class="g-line-height-1_2 g-font-weight-300 g-font-size-28 g-color-black">25</h4>
+                      <em class="g-font-style-normal g-font-weight-300 g-font-size-16 g-color-gray-dark-v6">Topics</em>
+                    </div>
+
+                    <div>
+                      <h4 class="g-line-height-1_2 g-font-weight-300 g-font-size-28 g-color-black">23</h4>
+                      <em class="g-font-style-normal g-font-weight-300 g-font-size-16 g-color-gray-dark-v6">Videos</em>
+                    </div>
+
+                    <div>
+                      <h4 class="g-line-height-1_2 g-font-weight-300 g-font-size-28 g-color-black">7</h4>
+                      <em class="g-font-style-normal g-font-weight-300 g-font-size-16 g-color-gray-dark-v6">Quiz</em>
+                    </div>
+                  </div>
+                  <hr class="d-flex g-brd-gray-light-v7 g-mx-20 g-mx-30--sm my-0">
+
+                  <div class="card-block g-px-20 g-px-30--sm g-py-10 g-py-15--sm">
+                    <div class="media align-self-center g-mb-5">
+                      <div class="d-flex g-width-100 g-font-weight-300 g-color-gray-dark-v10">Content Upload</div>
+
+                      <div class="media-body align-self-center">
+                        <div class="progress g-height-4 g-rounded-2">
+                          <div class="progress-bar g-bg-lightblue-v3 g-rounded-2" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                      <div class="d-flex align-self-center justify-content-end g-font-weight-300 g-color-black g-width-40">16%</div>
+                    </div>
+                  </div>
+
+                  <hr class="d-flex g-brd-gray-light-v7 g-mx-20 g-mx-30--sm my-0">
+
+                  <div class="card-block g-px-20 g-px-30--sm g-py-15 g-py-20--sm">
+                    <div class="row g-mb-25">
+                      <div class="col-md-6 g-mb-25 g-mb-0--md">
+                        <h5 class="g-font-size-default g-color-gray-dark-v6 g-mb-5">Last Updated</h5>
+                        <p class="g-color-black mb-0">12 Jun 2017</p>
+                      </div>
+
+                      <div class="col-md-6">
+                        <h5 class="g-font-size-default g-color-gray-dark-v6 g-mb-5">Video Length</h5>
+                        <p class="g-color-black mb-0">6h
+                          <span class="g-hidden-md-down">43min&nbsp;</span>
+                          <span class="g-hidden-md-up">.</span>
+                          total length
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- <div class="g-mb-25">
+                      <h5 class="g-font-size-default g-color-gray-dark-v6 g-mb-5">Last edited</h5>
+                      <p class="g-color-black mb-0">New design uploaded by Adam</p>
+                    </div> -->
+
+                    <!-- <ul class="list-inline mb-0">
+                      <li class="list-inline-item g-mb-10 g-mb-0--sm">
+                        <img class="g-width-40 g-height-40 rounded-circle" src="assets/b-assets/img-temp/100x100/img14.jpg" alt="Image Description">
+                      </li>
+                      <li class="list-inline-item g-mb-10 g-mb-0--sm">
+                        <img class="g-width-40 g-height-40 rounded-circle" src="assets/b-assets/img-temp/100x100/img17.jpg" alt="Image Description">
+                      </li>
+                      <li class="list-inline-item g-mb-10 g-mb-0--sm">
+                        <div class="d-flex align-items-center justify-content-center g-width-40 g-height-40 g-bg-secondary g-color-white rounded-circle g-pos-rel g-top-1">+4</div>
+                      </li>
+                      <li class="list-inline-item g-mb-10 g-mb-0--sm">
+                        <a class="d-flex align-items-center justify-content-center u-link-v5 g-width-40 g-height-40 g-bg-gray-light-v8 g-bg-primary--hover g-color-secondary g-color-white--hover rounded-circle g-pos-rel g-top-1" href="#!">
+                          <i class="hs-admin-plus"></i>
+                        </a>
+                      </li>
+                    </ul> -->
+                  </div>
+                </div>
+              </div>
+
+                <div class="col-md-6 col-lg-4 g-mb-30">
+                <div class="card h-100 g-brd-gray-light-v7 rounded">
+                  <header class="card-header g-bg-transparent g-brd-bottom-none g-pa-20 g-pa-30--sm">
+                    <div class="media g-mb-15">
+                      <div class="d-flex align-self-center">Chapter One</div>
+
+                      <div class="media-body d-flex justify-content-end">
+                        <div class="g-pos-rel g-z-index-2">
+                          <a id="dropDown1Invoker" class="u-link-v5 g-line-height-0 g-font-size-24 g-color-gray-light-v6 g-color-secondary--hover" href="#!" aria-controls="dropDown1" aria-haspopup="true" aria-expanded="false" data-dropdown-event="click" data-dropdown-target="#dropDown2" data-dropdown-type="jquery-slide">
+                            <i class="hs-admin-more-alt g-ml-20"></i>
+                          </a>
+
+                          <div id="dropDown2" class="u-shadow-v31 g-pos-abs g-right-0 g-bg-white u-dropdown--jquery-slide u-dropdown--hidden" aria-labelledby="dropDown1Invoker" style="display: none;">
+                            <ul class="list-unstyled g-nowrap mb-0">
+                              <li>
+                                <a class="d-flex align-items-center js-fancybox u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!" data-src="#edit-form">
+                                  <i class="hs-admin-pencil g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                  Edit
                                 </a>
                               </li>
                               <li>
                                 <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
-                                  <i class="hs-admin-check g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
-                                  Mark as Done
+                                  <i class="hs-admin-trash g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                  Delete
                                 </a>
                               </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <h3 class="g-font-weight-300 g-font-size-20 g-color-black g-mb-15"> Sub Topic Title</h3>
+                    <span class="u-tags-v1 text-center g-width-130 g-brd-around g-brd-primary g-bg-primary g-color-white g-rounded-50 g-py-4 g-px-15">Declined</span>
+                  </header>
+
+                  <hr class="d-flex g-brd-gray-light-v7 g-mx-20 g-mx-30--sm my-0">
+
+                  <div class="card-block d-flex justify-content-between g-px-20 g-px-30--sm g-py-15 g-py-20--sm">
+                    <div>
+                      <h4 class="g-line-height-1_2 g-font-weight-300 g-font-size-28 g-color-black">25</h4>
+                      <em class="g-font-style-normal g-font-weight-300 g-font-size-16 g-color-gray-dark-v6">Topics</em>
+                    </div>
+
+                    <div>
+                      <h4 class="g-line-height-1_2 g-font-weight-300 g-font-size-28 g-color-black">23</h4>
+                      <em class="g-font-style-normal g-font-weight-300 g-font-size-16 g-color-gray-dark-v6">Videos</em>
+                    </div>
+
+                    <div>
+                      <h4 class="g-line-height-1_2 g-font-weight-300 g-font-size-28 g-color-black">7</h4>
+                      <em class="g-font-style-normal g-font-weight-300 g-font-size-16 g-color-gray-dark-v6">Quiz</em>
+                    </div>
+                  </div>
+                  <hr class="d-flex g-brd-gray-light-v7 g-mx-20 g-mx-30--sm my-0">
+
+                  <div class="card-block g-px-20 g-px-30--sm g-py-10 g-py-15--sm">
+                    <div class="media align-self-center g-mb-5">
+                      <div class="d-flex g-width-100 g-font-weight-300 g-color-gray-dark-v10">Content Upload</div>
+
+                      <div class="media-body align-self-center">
+                        <div class="progress g-height-4 g-rounded-2">
+                          <div class="progress-bar g-bg-lightblue-v3 g-rounded-2" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                      <div class="d-flex align-self-center justify-content-end g-font-weight-300 g-color-black g-width-40">16%</div>
+                    </div>
+                  </div>
+
+                  <hr class="d-flex g-brd-gray-light-v7 g-mx-20 g-mx-30--sm my-0">
+
+                  <div class="card-block g-px-20 g-px-30--sm g-py-15 g-py-20--sm">
+                    <div class="row g-mb-25">
+                      <div class="col-md-6 g-mb-25 g-mb-0--md">
+                        <h5 class="g-font-size-default g-color-gray-dark-v6 g-mb-5">Last Updated</h5>
+                        <p class="g-color-black mb-0">12 Jun 2017</p>
+                      </div>
+
+                      <div class="col-md-6">
+                        <h5 class="g-font-size-default g-color-gray-dark-v6 g-mb-5">Video Length</h5>
+                        <p class="g-color-black mb-0">6h
+                          <span class="g-hidden-md-down">43min&nbsp;</span>
+                          <span class="g-hidden-md-up">.</span>
+                          total length
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- <div class="g-mb-25">
+                      <h5 class="g-font-size-default g-color-gray-dark-v6 g-mb-5">Last edited</h5>
+                      <p class="g-color-black mb-0">New design uploaded by Adam</p>
+                    </div> -->
+
+                    <!-- <ul class="list-inline mb-0">
+                      <li class="list-inline-item g-mb-10 g-mb-0--sm">
+                        <img class="g-width-40 g-height-40 rounded-circle" src="assets/b-assets/img-temp/100x100/img14.jpg" alt="Image Description">
+                      </li>
+                      <li class="list-inline-item g-mb-10 g-mb-0--sm">
+                        <img class="g-width-40 g-height-40 rounded-circle" src="assets/b-assets/img-temp/100x100/img17.jpg" alt="Image Description">
+                      </li>
+                      <li class="list-inline-item g-mb-10 g-mb-0--sm">
+                        <div class="d-flex align-items-center justify-content-center g-width-40 g-height-40 g-bg-secondary g-color-white rounded-circle g-pos-rel g-top-1">+4</div>
+                      </li>
+                      <li class="list-inline-item g-mb-10 g-mb-0--sm">
+                        <a class="d-flex align-items-center justify-content-center u-link-v5 g-width-40 g-height-40 g-bg-gray-light-v8 g-bg-primary--hover g-color-secondary g-color-white--hover rounded-circle g-pos-rel g-top-1" href="#!">
+                          <i class="hs-admin-plus"></i>
+                        </a>
+                      </li>
+                    </ul> -->
+                  </div>
+                </div>
+              </div>
+
+                <div class="col-md-6 col-lg-4 g-mb-30">
+                <div class="card h-100 g-brd-gray-light-v7 rounded">
+                  <header class="card-header g-bg-transparent g-brd-bottom-none g-pa-20 g-pa-30--sm">
+                    <div class="media g-mb-15">
+                      <div class="d-flex align-self-center">Chapter One</div>
+
+                      <div class="media-body d-flex justify-content-end">
+                        <div class="g-pos-rel g-z-index-2">
+                          <a id="dropDown1Invoker" class="u-link-v5 g-line-height-0 g-font-size-24 g-color-gray-light-v6 g-color-secondary--hover" href="#!" aria-controls="dropDown1" aria-haspopup="true" aria-expanded="false" data-dropdown-event="click" data-dropdown-target="#dropDown3" data-dropdown-type="jquery-slide">
+                            <i class="hs-admin-more-alt g-ml-20"></i>
+                          </a>
+
+                          <div id="dropDown3" class="u-shadow-v31 g-pos-abs g-right-0 g-bg-white u-dropdown--jquery-slide u-dropdown--hidden" aria-labelledby="dropDown1Invoker" style="display: none;">
+                            <ul class="list-unstyled g-nowrap mb-0">
+                              <li>
+                                <a class="d-flex align-items-center js-fancybox u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!" data-src="#edit-form">
+                                  <i class="hs-admin-pencil g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                  Edit
+                                </a>
+                              </li>
+                              
                               <li>
                                 <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
-                                  <i class="hs-admin-plus g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
-                                  New Task
+                                  <i class="hs-admin-trash g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                  Delete
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <h3 class="g-font-weight-300 g-font-size-20 g-color-black g-mb-15"> Sub Topic Title</h3>
+                    <span class="u-tags-v1 text-center g-width-130 g-brd-around g-brd-primary g-bg-primary g-color-white g-rounded-50 g-py-4 g-px-15">Declined</span>
+                  </header>
+
+                  <hr class="d-flex g-brd-gray-light-v7 g-mx-20 g-mx-30--sm my-0">
+
+                  <div class="card-block d-flex justify-content-between g-px-20 g-px-30--sm g-py-15 g-py-20--sm">
+                    <div>
+                      <h4 class="g-line-height-1_2 g-font-weight-300 g-font-size-28 g-color-black">25</h4>
+                      <em class="g-font-style-normal g-font-weight-300 g-font-size-16 g-color-gray-dark-v6">Topics</em>
+                    </div>
+
+                    <div>
+                      <h4 class="g-line-height-1_2 g-font-weight-300 g-font-size-28 g-color-black">23</h4>
+                      <em class="g-font-style-normal g-font-weight-300 g-font-size-16 g-color-gray-dark-v6">Videos</em>
+                    </div>
+
+                    <div>
+                      <h4 class="g-line-height-1_2 g-font-weight-300 g-font-size-28 g-color-black">7</h4>
+                      <em class="g-font-style-normal g-font-weight-300 g-font-size-16 g-color-gray-dark-v6">Quiz</em>
+                    </div>
+                  </div>
+                  <hr class="d-flex g-brd-gray-light-v7 g-mx-20 g-mx-30--sm my-0">
+
+                  <div class="card-block g-px-20 g-px-30--sm g-py-10 g-py-15--sm">
+                    <div class="media align-self-center g-mb-5">
+                      <div class="d-flex g-width-100 g-font-weight-300 g-color-gray-dark-v10">Content Upload</div>
+
+                      <div class="media-body align-self-center">
+                        <div class="progress g-height-4 g-rounded-2">
+                          <div class="progress-bar g-bg-lightblue-v3 g-rounded-2" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                      <div class="d-flex align-self-center justify-content-end g-font-weight-300 g-color-black g-width-40">16%</div>
+                    </div>
+                  </div>
+
+                  <hr class="d-flex g-brd-gray-light-v7 g-mx-20 g-mx-30--sm my-0">
+
+                  <div class="card-block g-px-20 g-px-30--sm g-py-15 g-py-20--sm">
+                    <div class="row g-mb-25">
+                      <div class="col-md-6 g-mb-25 g-mb-0--md">
+                        <h5 class="g-font-size-default g-color-gray-dark-v6 g-mb-5">Last Updated</h5>
+                        <p class="g-color-black mb-0">12 Jun 2017</p>
+                      </div>
+
+                      <div class="col-md-6">
+                        <h5 class="g-font-size-default g-color-gray-dark-v6 g-mb-5">Video Length</h5>
+                        <p class="g-color-black mb-0">6h
+                          <span class="g-hidden-md-down">43min&nbsp;</span>
+                          <span class="g-hidden-md-up">.</span>
+                          total length
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- <div class="g-mb-25">
+                      <h5 class="g-font-size-default g-color-gray-dark-v6 g-mb-5">Last edited</h5>
+                      <p class="g-color-black mb-0">New design uploaded by Adam</p>
+                    </div> -->
+
+                    <!-- <ul class="list-inline mb-0">
+                      <li class="list-inline-item g-mb-10 g-mb-0--sm">
+                        <img class="g-width-40 g-height-40 rounded-circle" src="assets/b-assets/img-temp/100x100/img14.jpg" alt="Image Description">
+                      </li>
+                      <li class="list-inline-item g-mb-10 g-mb-0--sm">
+                        <img class="g-width-40 g-height-40 rounded-circle" src="assets/b-assets/img-temp/100x100/img17.jpg" alt="Image Description">
+                      </li>
+                      <li class="list-inline-item g-mb-10 g-mb-0--sm">
+                        <div class="d-flex align-items-center justify-content-center g-width-40 g-height-40 g-bg-secondary g-color-white rounded-circle g-pos-rel g-top-1">+4</div>
+                      </li>
+                      <li class="list-inline-item g-mb-10 g-mb-0--sm">
+                        <a class="d-flex align-items-center justify-content-center u-link-v5 g-width-40 g-height-40 g-bg-gray-light-v8 g-bg-primary--hover g-color-secondary g-color-white--hover rounded-circle g-pos-rel g-top-1" href="#!">
+                          <i class="hs-admin-plus"></i>
+                        </a>
+                      </li>
+                    </ul> -->
+                  </div>
+                </div>
+              </div>
+
+                <div class="col-md-6 col-lg-4 g-mb-30">
+                <div class="card h-100 g-brd-gray-light-v7 rounded">
+                  <header class="card-header g-bg-transparent g-brd-bottom-none g-pa-20 g-pa-30--sm">
+                    <div class="media g-mb-15">
+                      <div class="d-flex align-self-center">Chapter One</div>
+
+                      <div class="media-body d-flex justify-content-end">
+                        <div class="g-pos-rel g-z-index-2">
+                          <a id="dropDown1Invoker" class="u-link-v5 g-line-height-0 g-font-size-24 g-color-gray-light-v6 g-color-secondary--hover" href="#!" aria-controls="dropDown1" aria-haspopup="true" aria-expanded="false" data-dropdown-event="click" data-dropdown-target="#dropDown4" data-dropdown-type="jquery-slide">
+                            <i class="hs-admin-more-alt g-ml-20"></i>
+                          </a>
+
+                          <div id="dropDown4" class="u-shadow-v31 g-pos-abs g-right-0 g-bg-white u-dropdown--jquery-slide u-dropdown--hidden" aria-labelledby="dropDown1Invoker" style="display: none;">
+                            <ul class="list-unstyled g-nowrap mb-0">
+                              <li>
+                                <a class="d-flex align-items-center js-fancybox u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!" data-src="#edit-form">
+                                  <i class="hs-admin-pencil g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                  Edit
+                                </a>
+                              </li>
+                          
+                              <li>
+                                <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                  <i class="hs-admin-trash g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                  Delete
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <h3 class="g-font-weight-300 g-font-size-20 g-color-black g-mb-15"> Sub Topic Title</h3>
+                    <span class="u-tags-v1 text-center g-width-130 g-brd-around g-brd-primary g-bg-primary g-color-white g-rounded-50 g-py-4 g-px-15">Declined</span>
+                  </header>
+
+                  <hr class="d-flex g-brd-gray-light-v7 g-mx-20 g-mx-30--sm my-0">
+
+                  <div class="card-block d-flex justify-content-between g-px-20 g-px-30--sm g-py-15 g-py-20--sm">
+                    <div>
+                      <h4 class="g-line-height-1_2 g-font-weight-300 g-font-size-28 g-color-black">25</h4>
+                      <em class="g-font-style-normal g-font-weight-300 g-font-size-16 g-color-gray-dark-v6">Topics</em>
+                    </div>
+
+                    <div>
+                      <h4 class="g-line-height-1_2 g-font-weight-300 g-font-size-28 g-color-black">23</h4>
+                      <em class="g-font-style-normal g-font-weight-300 g-font-size-16 g-color-gray-dark-v6">Videos</em>
+                    </div>
+
+                    <div>
+                      <h4 class="g-line-height-1_2 g-font-weight-300 g-font-size-28 g-color-black">7</h4>
+                      <em class="g-font-style-normal g-font-weight-300 g-font-size-16 g-color-gray-dark-v6">Quiz</em>
+                    </div>
+                  </div>
+                  <hr class="d-flex g-brd-gray-light-v7 g-mx-20 g-mx-30--sm my-0">
+
+                  <div class="card-block g-px-20 g-px-30--sm g-py-10 g-py-15--sm">
+                    <div class="media align-self-center g-mb-5">
+                      <div class="d-flex g-width-100 g-font-weight-300 g-color-gray-dark-v10">Content Upload</div>
+
+                      <div class="media-body align-self-center">
+                        <div class="progress g-height-4 g-rounded-2">
+                          <div class="progress-bar g-bg-lightblue-v3 g-rounded-2" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                      <div class="d-flex align-self-center justify-content-end g-font-weight-300 g-color-black g-width-40">16%</div>
+                    </div>
+                  </div>
+
+                  <hr class="d-flex g-brd-gray-light-v7 g-mx-20 g-mx-30--sm my-0">
+
+                  <div class="card-block g-px-20 g-px-30--sm g-py-15 g-py-20--sm">
+                    <div class="row g-mb-25">
+                      <div class="col-md-6 g-mb-25 g-mb-0--md">
+                        <h5 class="g-font-size-default g-color-gray-dark-v6 g-mb-5">Last Updated</h5>
+                        <p class="g-color-black mb-0">12 Jun 2017</p>
+                      </div>
+
+                      <div class="col-md-6">
+                        <h5 class="g-font-size-default g-color-gray-dark-v6 g-mb-5">Video Length</h5>
+                        <p class="g-color-black mb-0">6h
+                          <span class="g-hidden-md-down">43min&nbsp;</span>
+                          <span class="g-hidden-md-up">.</span>
+                          total length
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- <div class="g-mb-25">
+                      <h5 class="g-font-size-default g-color-gray-dark-v6 g-mb-5">Last edited</h5>
+                      <p class="g-color-black mb-0">New design uploaded by Adam</p>
+                    </div> -->
+
+                    <!-- <ul class="list-inline mb-0">
+                      <li class="list-inline-item g-mb-10 g-mb-0--sm">
+                        <img class="g-width-40 g-height-40 rounded-circle" src="assets/b-assets/img-temp/100x100/img14.jpg" alt="Image Description">
+                      </li>
+                      <li class="list-inline-item g-mb-10 g-mb-0--sm">
+                        <img class="g-width-40 g-height-40 rounded-circle" src="assets/b-assets/img-temp/100x100/img17.jpg" alt="Image Description">
+                      </li>
+                      <li class="list-inline-item g-mb-10 g-mb-0--sm">
+                        <div class="d-flex align-items-center justify-content-center g-width-40 g-height-40 g-bg-secondary g-color-white rounded-circle g-pos-rel g-top-1">+4</div>
+                      </li>
+                      <li class="list-inline-item g-mb-10 g-mb-0--sm">
+                        <a class="d-flex align-items-center justify-content-center u-link-v5 g-width-40 g-height-40 g-bg-gray-light-v8 g-bg-primary--hover g-color-secondary g-color-white--hover rounded-circle g-pos-rel g-top-1" href="#!">
+                          <i class="hs-admin-plus"></i>
+                        </a>
+                      </li>
+                    </ul> -->
+                  </div>
+                </div>
+              </div>
+
+                <div class="col-md-6 col-lg-4 g-mb-30">
+                <div class="card h-100 g-brd-gray-light-v7 rounded">
+                  <header class="card-header g-bg-transparent g-brd-bottom-none g-pa-20 g-pa-30--sm">
+                    <div class="media g-mb-15">
+                      <div class="d-flex align-self-center">Chapter One</div>
+
+                      <div class="media-body d-flex justify-content-end">
+                        <div class="g-pos-rel g-z-index-2">
+                          <a id="dropDown1Invoker" class="u-link-v5 g-line-height-0 g-font-size-24 g-color-gray-light-v6 g-color-secondary--hover" href="#!" aria-controls="dropDown1" aria-haspopup="true" aria-expanded="false" data-dropdown-event="click" data-dropdown-target="#dropDown5" data-dropdown-type="jquery-slide">
+                            <i class="hs-admin-more-alt g-ml-20"></i>
+                          </a>
+
+                          <div id="dropDown5" class="u-shadow-v31 g-pos-abs g-right-0 g-bg-white u-dropdown--jquery-slide u-dropdown--hidden" aria-labelledby="dropDown1Invoker" style="display: none;">
+                            <ul class="list-unstyled g-nowrap mb-0">
+                              <li>
+                                <a class="d-flex align-items-center js-fancybox u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!" data-src="#edit-form">
+                                  <i class="hs-admin-pencil g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                  Edit
+                                </a>
+                              </li>
+                              
+                              <li>
+                                <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                  <i class="hs-admin-trash g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                  Delete
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <h3 class="g-font-weight-300 g-font-size-20 g-color-black g-mb-15"> Sub Topic Title</h3>
+                    <span class="u-tags-v1 text-center g-width-130 g-brd-around g-brd-primary g-bg-primary g-color-white g-rounded-50 g-py-4 g-px-15">Declined</span>
+                  </header>
+
+                  <hr class="d-flex g-brd-gray-light-v7 g-mx-20 g-mx-30--sm my-0">
+
+                  <div class="card-block d-flex justify-content-between g-px-20 g-px-30--sm g-py-15 g-py-20--sm">
+                    <div>
+                      <h4 class="g-line-height-1_2 g-font-weight-300 g-font-size-28 g-color-black">25</h4>
+                      <em class="g-font-style-normal g-font-weight-300 g-font-size-16 g-color-gray-dark-v6">Topics</em>
+                    </div>
+
+                    <div>
+                      <h4 class="g-line-height-1_2 g-font-weight-300 g-font-size-28 g-color-black">23</h4>
+                      <em class="g-font-style-normal g-font-weight-300 g-font-size-16 g-color-gray-dark-v6">Videos</em>
+                    </div>
+
+                    <div>
+                      <h4 class="g-line-height-1_2 g-font-weight-300 g-font-size-28 g-color-black">7</h4>
+                      <em class="g-font-style-normal g-font-weight-300 g-font-size-16 g-color-gray-dark-v6">Quiz</em>
+                    </div>
+                  </div>
+                  <hr class="d-flex g-brd-gray-light-v7 g-mx-20 g-mx-30--sm my-0">
+
+                  <div class="card-block g-px-20 g-px-30--sm g-py-10 g-py-15--sm">
+                    <div class="media align-self-center g-mb-5">
+                      <div class="d-flex g-width-100 g-font-weight-300 g-color-gray-dark-v10">Content Upload</div>
+
+                      <div class="media-body align-self-center">
+                        <div class="progress g-height-4 g-rounded-2">
+                          <div class="progress-bar g-bg-lightblue-v3 g-rounded-2" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                      <div class="d-flex align-self-center justify-content-end g-font-weight-300 g-color-black g-width-40">16%</div>
+                    </div>
+                  </div>
+
+                  <hr class="d-flex g-brd-gray-light-v7 g-mx-20 g-mx-30--sm my-0">
+
+                  <div class="card-block g-px-20 g-px-30--sm g-py-15 g-py-20--sm">
+                    <div class="row g-mb-25">
+                      <div class="col-md-6 g-mb-25 g-mb-0--md">
+                        <h5 class="g-font-size-default g-color-gray-dark-v6 g-mb-5">Last Updated</h5>
+                        <p class="g-color-black mb-0">12 Jun 2017</p>
+                      </div>
+
+                      <div class="col-md-6">
+                        <h5 class="g-font-size-default g-color-gray-dark-v6 g-mb-5">Video Length</h5>
+                        <p class="g-color-black mb-0">6h
+                          <span class="g-hidden-md-down">43min&nbsp;</span>
+                          <span class="g-hidden-md-up">.</span>
+                          total length
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- <div class="g-mb-25">
+                      <h5 class="g-font-size-default g-color-gray-dark-v6 g-mb-5">Last edited</h5>
+                      <p class="g-color-black mb-0">New design uploaded by Adam</p>
+                    </div> -->
+
+                    <!-- <ul class="list-inline mb-0">
+                      <li class="list-inline-item g-mb-10 g-mb-0--sm">
+                        <img class="g-width-40 g-height-40 rounded-circle" src="assets/b-assets/img-temp/100x100/img14.jpg" alt="Image Description">
+                      </li>
+                      <li class="list-inline-item g-mb-10 g-mb-0--sm">
+                        <img class="g-width-40 g-height-40 rounded-circle" src="assets/b-assets/img-temp/100x100/img17.jpg" alt="Image Description">
+                      </li>
+                      <li class="list-inline-item g-mb-10 g-mb-0--sm">
+                        <div class="d-flex align-items-center justify-content-center g-width-40 g-height-40 g-bg-secondary g-color-white rounded-circle g-pos-rel g-top-1">+4</div>
+                      </li>
+                      <li class="list-inline-item g-mb-10 g-mb-0--sm">
+                        <a class="d-flex align-items-center justify-content-center u-link-v5 g-width-40 g-height-40 g-bg-gray-light-v8 g-bg-primary--hover g-color-secondary g-color-white--hover rounded-circle g-pos-rel g-top-1" href="#!">
+                          <i class="hs-admin-plus"></i>
+                        </a>
+                      </li>
+                    </ul> -->
+                  </div>
+                </div>
+              </div>
+
+                <div class="col-md-6 col-lg-4 g-mb-30">
+                <div class="card h-100 g-brd-gray-light-v7 rounded">
+                  <header class="card-header g-bg-transparent g-brd-bottom-none g-pa-20 g-pa-30--sm">
+                    <div class="media g-mb-15">
+                      <div class="d-flex align-self-center">Chapter One</div>
+
+                      <div class="media-body d-flex justify-content-end">
+                        <div class="g-pos-rel g-z-index-2">
+                          <a id="dropDown1Invoker" class="u-link-v5 g-line-height-0 g-font-size-24 g-color-gray-light-v6 g-color-secondary--hover" href="#!" aria-controls="dropDown1" aria-haspopup="true" aria-expanded="false" data-dropdown-event="click" data-dropdown-target="#dropDown6" data-dropdown-type="jquery-slide">
+                            <i class="hs-admin-more-alt g-ml-20"></i>
+                          </a>
+
+                          <div id="dropDown6" class="u-shadow-v31 g-pos-abs g-right-0 g-bg-white u-dropdown--jquery-slide u-dropdown--hidden" aria-labelledby="dropDown1Invoker" style="display: none;">
+                            <ul class="list-unstyled g-nowrap mb-0">
+                              <li>
+                                <a class="d-flex align-items-center js-fancybox u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!" data-src="#edit-form">
+                                  <i class="hs-admin-pencil g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                  Edit
                                 </a>
                               </li>
                               <li>
@@ -196,662 +746,7 @@
                           <div id="dropDown1" class="u-shadow-v31 g-pos-abs g-right-0 g-bg-white u-dropdown--jquery-slide u-dropdown--hidden" aria-labelledby="dropDown1Invoker" style="display: none;">
                             <ul class="list-unstyled g-nowrap mb-0">
                               <li>
-                                <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
-                                  <i class="hs-admin-pencil g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
-                                  Edit
-                                </a>
-                              </li>
-                              <li>
-                                <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
-                                  <i class="hs-admin-archive g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
-                                  Archive
-                                </a>
-                              </li>
-                              <li>
-                                <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
-                                  <i class="hs-admin-check g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
-                                  Mark as Done
-                                </a>
-                              </li>
-                              <li>
-                                <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
-                                  <i class="hs-admin-plus g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
-                                  New Task
-                                </a>
-                              </li>
-                              <li>
-                                <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
-                                  <i class="hs-admin-trash g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
-                                  Delete
-                                </a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <h3 class="g-font-weight-300 g-font-size-20 g-color-black g-mb-15"> Sub Topic Title</h3>
-                    <span class="u-tags-v1 text-center g-width-130 g-brd-around g-brd-primary g-bg-primary g-color-white g-rounded-50 g-py-4 g-px-15">Declined</span>
-                  </header>
-
-                  <hr class="d-flex g-brd-gray-light-v7 g-mx-20 g-mx-30--sm my-0">
-
-                  <div class="card-block d-flex justify-content-between g-px-20 g-px-30--sm g-py-15 g-py-20--sm">
-                    <div>
-                      <h4 class="g-line-height-1_2 g-font-weight-300 g-font-size-28 g-color-black">25</h4>
-                      <em class="g-font-style-normal g-font-weight-300 g-font-size-16 g-color-gray-dark-v6">Topics</em>
-                    </div>
-
-                    <div>
-                      <h4 class="g-line-height-1_2 g-font-weight-300 g-font-size-28 g-color-black">23</h4>
-                      <em class="g-font-style-normal g-font-weight-300 g-font-size-16 g-color-gray-dark-v6">Videos</em>
-                    </div>
-
-                    <div>
-                      <h4 class="g-line-height-1_2 g-font-weight-300 g-font-size-28 g-color-black">7</h4>
-                      <em class="g-font-style-normal g-font-weight-300 g-font-size-16 g-color-gray-dark-v6">Quiz</em>
-                    </div>
-                  </div>
-                  <hr class="d-flex g-brd-gray-light-v7 g-mx-20 g-mx-30--sm my-0">
-
-                  <div class="card-block g-px-20 g-px-30--sm g-py-10 g-py-15--sm">
-                    <div class="media align-self-center g-mb-5">
-                      <div class="d-flex g-width-100 g-font-weight-300 g-color-gray-dark-v10">Content Upload</div>
-
-                      <div class="media-body align-self-center">
-                        <div class="progress g-height-4 g-rounded-2">
-                          <div class="progress-bar g-bg-lightblue-v3 g-rounded-2" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-                      <div class="d-flex align-self-center justify-content-end g-font-weight-300 g-color-black g-width-40">16%</div>
-                    </div>
-                  </div>
-
-                  <hr class="d-flex g-brd-gray-light-v7 g-mx-20 g-mx-30--sm my-0">
-
-                  <div class="card-block g-px-20 g-px-30--sm g-py-15 g-py-20--sm">
-                    <div class="row g-mb-25">
-                      <div class="col-md-6 g-mb-25 g-mb-0--md">
-                        <h5 class="g-font-size-default g-color-gray-dark-v6 g-mb-5">Last Updated</h5>
-                        <p class="g-color-black mb-0">12 Jun 2017</p>
-                      </div>
-
-                      <div class="col-md-6">
-                        <h5 class="g-font-size-default g-color-gray-dark-v6 g-mb-5">Video Length</h5>
-                        <p class="g-color-black mb-0">6h
-                          <span class="g-hidden-md-down">43min&nbsp;</span>
-                          <span class="g-hidden-md-up">.</span>
-                          total length
-                        </p>
-                      </div>
-                    </div>
-
-                    <!-- <div class="g-mb-25">
-                      <h5 class="g-font-size-default g-color-gray-dark-v6 g-mb-5">Last edited</h5>
-                      <p class="g-color-black mb-0">New design uploaded by Adam</p>
-                    </div> -->
-
-                    <!-- <ul class="list-inline mb-0">
-                      <li class="list-inline-item g-mb-10 g-mb-0--sm">
-                        <img class="g-width-40 g-height-40 rounded-circle" src="assets/b-assets/img-temp/100x100/img14.jpg" alt="Image Description">
-                      </li>
-                      <li class="list-inline-item g-mb-10 g-mb-0--sm">
-                        <img class="g-width-40 g-height-40 rounded-circle" src="assets/b-assets/img-temp/100x100/img17.jpg" alt="Image Description">
-                      </li>
-                      <li class="list-inline-item g-mb-10 g-mb-0--sm">
-                        <div class="d-flex align-items-center justify-content-center g-width-40 g-height-40 g-bg-secondary g-color-white rounded-circle g-pos-rel g-top-1">+4</div>
-                      </li>
-                      <li class="list-inline-item g-mb-10 g-mb-0--sm">
-                        <a class="d-flex align-items-center justify-content-center u-link-v5 g-width-40 g-height-40 g-bg-gray-light-v8 g-bg-primary--hover g-color-secondary g-color-white--hover rounded-circle g-pos-rel g-top-1" href="#!">
-                          <i class="hs-admin-plus"></i>
-                        </a>
-                      </li>
-                    </ul> -->
-                  </div>
-                </div>
-              </div>
-
-                <div class="col-md-6 col-lg-4 g-mb-30">
-                <div class="card h-100 g-brd-gray-light-v7 rounded">
-                  <header class="card-header g-bg-transparent g-brd-bottom-none g-pa-20 g-pa-30--sm">
-                    <div class="media g-mb-15">
-                      <div class="d-flex align-self-center">Chapter One</div>
-
-                      <div class="media-body d-flex justify-content-end">
-                        <div class="g-pos-rel g-z-index-2">
-                          <a id="dropDown1Invoker" class="u-link-v5 g-line-height-0 g-font-size-24 g-color-gray-light-v6 g-color-secondary--hover" href="#!" aria-controls="dropDown1" aria-haspopup="true" aria-expanded="false" data-dropdown-event="click" data-dropdown-target="#dropDown1" data-dropdown-type="jquery-slide">
-                            <i class="hs-admin-more-alt g-ml-20"></i>
-                          </a>
-
-                          <div id="dropDown1" class="u-shadow-v31 g-pos-abs g-right-0 g-bg-white u-dropdown--jquery-slide u-dropdown--hidden" aria-labelledby="dropDown1Invoker" style="display: none;">
-                            <ul class="list-unstyled g-nowrap mb-0">
-                              <li>
-                                <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
-                                  <i class="hs-admin-pencil g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
-                                  Edit
-                                </a>
-                              </li>
-                              <li>
-                                <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
-                                  <i class="hs-admin-archive g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
-                                  Archive
-                                </a>
-                              </li>
-                              <li>
-                                <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
-                                  <i class="hs-admin-check g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
-                                  Mark as Done
-                                </a>
-                              </li>
-                              <li>
-                                <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
-                                  <i class="hs-admin-plus g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
-                                  New Task
-                                </a>
-                              </li>
-                              <li>
-                                <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
-                                  <i class="hs-admin-trash g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
-                                  Delete
-                                </a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <h3 class="g-font-weight-300 g-font-size-20 g-color-black g-mb-15"> Sub Topic Title</h3>
-                    <span class="u-tags-v1 text-center g-width-130 g-brd-around g-brd-primary g-bg-primary g-color-white g-rounded-50 g-py-4 g-px-15">Declined</span>
-                  </header>
-
-                  <hr class="d-flex g-brd-gray-light-v7 g-mx-20 g-mx-30--sm my-0">
-
-                  <div class="card-block d-flex justify-content-between g-px-20 g-px-30--sm g-py-15 g-py-20--sm">
-                    <div>
-                      <h4 class="g-line-height-1_2 g-font-weight-300 g-font-size-28 g-color-black">25</h4>
-                      <em class="g-font-style-normal g-font-weight-300 g-font-size-16 g-color-gray-dark-v6">Topics</em>
-                    </div>
-
-                    <div>
-                      <h4 class="g-line-height-1_2 g-font-weight-300 g-font-size-28 g-color-black">23</h4>
-                      <em class="g-font-style-normal g-font-weight-300 g-font-size-16 g-color-gray-dark-v6">Videos</em>
-                    </div>
-
-                    <div>
-                      <h4 class="g-line-height-1_2 g-font-weight-300 g-font-size-28 g-color-black">7</h4>
-                      <em class="g-font-style-normal g-font-weight-300 g-font-size-16 g-color-gray-dark-v6">Quiz</em>
-                    </div>
-                  </div>
-                  <hr class="d-flex g-brd-gray-light-v7 g-mx-20 g-mx-30--sm my-0">
-
-                  <div class="card-block g-px-20 g-px-30--sm g-py-10 g-py-15--sm">
-                    <div class="media align-self-center g-mb-5">
-                      <div class="d-flex g-width-100 g-font-weight-300 g-color-gray-dark-v10">Content Upload</div>
-
-                      <div class="media-body align-self-center">
-                        <div class="progress g-height-4 g-rounded-2">
-                          <div class="progress-bar g-bg-lightblue-v3 g-rounded-2" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-                      <div class="d-flex align-self-center justify-content-end g-font-weight-300 g-color-black g-width-40">16%</div>
-                    </div>
-                  </div>
-
-                  <hr class="d-flex g-brd-gray-light-v7 g-mx-20 g-mx-30--sm my-0">
-
-                  <div class="card-block g-px-20 g-px-30--sm g-py-15 g-py-20--sm">
-                    <div class="row g-mb-25">
-                      <div class="col-md-6 g-mb-25 g-mb-0--md">
-                        <h5 class="g-font-size-default g-color-gray-dark-v6 g-mb-5">Last Updated</h5>
-                        <p class="g-color-black mb-0">12 Jun 2017</p>
-                      </div>
-
-                      <div class="col-md-6">
-                        <h5 class="g-font-size-default g-color-gray-dark-v6 g-mb-5">Video Length</h5>
-                        <p class="g-color-black mb-0">6h
-                          <span class="g-hidden-md-down">43min&nbsp;</span>
-                          <span class="g-hidden-md-up">.</span>
-                          total length
-                        </p>
-                      </div>
-                    </div>
-
-                    <!-- <div class="g-mb-25">
-                      <h5 class="g-font-size-default g-color-gray-dark-v6 g-mb-5">Last edited</h5>
-                      <p class="g-color-black mb-0">New design uploaded by Adam</p>
-                    </div> -->
-
-                    <!-- <ul class="list-inline mb-0">
-                      <li class="list-inline-item g-mb-10 g-mb-0--sm">
-                        <img class="g-width-40 g-height-40 rounded-circle" src="assets/b-assets/img-temp/100x100/img14.jpg" alt="Image Description">
-                      </li>
-                      <li class="list-inline-item g-mb-10 g-mb-0--sm">
-                        <img class="g-width-40 g-height-40 rounded-circle" src="assets/b-assets/img-temp/100x100/img17.jpg" alt="Image Description">
-                      </li>
-                      <li class="list-inline-item g-mb-10 g-mb-0--sm">
-                        <div class="d-flex align-items-center justify-content-center g-width-40 g-height-40 g-bg-secondary g-color-white rounded-circle g-pos-rel g-top-1">+4</div>
-                      </li>
-                      <li class="list-inline-item g-mb-10 g-mb-0--sm">
-                        <a class="d-flex align-items-center justify-content-center u-link-v5 g-width-40 g-height-40 g-bg-gray-light-v8 g-bg-primary--hover g-color-secondary g-color-white--hover rounded-circle g-pos-rel g-top-1" href="#!">
-                          <i class="hs-admin-plus"></i>
-                        </a>
-                      </li>
-                    </ul> -->
-                  </div>
-                </div>
-              </div>
-
-                <div class="col-md-6 col-lg-4 g-mb-30">
-                <div class="card h-100 g-brd-gray-light-v7 rounded">
-                  <header class="card-header g-bg-transparent g-brd-bottom-none g-pa-20 g-pa-30--sm">
-                    <div class="media g-mb-15">
-                      <div class="d-flex align-self-center">Chapter One</div>
-
-                      <div class="media-body d-flex justify-content-end">
-                        <div class="g-pos-rel g-z-index-2">
-                          <a id="dropDown1Invoker" class="u-link-v5 g-line-height-0 g-font-size-24 g-color-gray-light-v6 g-color-secondary--hover" href="#!" aria-controls="dropDown1" aria-haspopup="true" aria-expanded="false" data-dropdown-event="click" data-dropdown-target="#dropDown1" data-dropdown-type="jquery-slide">
-                            <i class="hs-admin-more-alt g-ml-20"></i>
-                          </a>
-
-                          <div id="dropDown1" class="u-shadow-v31 g-pos-abs g-right-0 g-bg-white u-dropdown--jquery-slide u-dropdown--hidden" aria-labelledby="dropDown1Invoker" style="display: none;">
-                            <ul class="list-unstyled g-nowrap mb-0">
-                              <li>
-                                <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
-                                  <i class="hs-admin-pencil g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
-                                  Edit
-                                </a>
-                              </li>
-                              <li>
-                                <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
-                                  <i class="hs-admin-archive g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
-                                  Archive
-                                </a>
-                              </li>
-                              <li>
-                                <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
-                                  <i class="hs-admin-check g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
-                                  Mark as Done
-                                </a>
-                              </li>
-                              <li>
-                                <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
-                                  <i class="hs-admin-plus g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
-                                  New Task
-                                </a>
-                              </li>
-                              <li>
-                                <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
-                                  <i class="hs-admin-trash g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
-                                  Delete
-                                </a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <h3 class="g-font-weight-300 g-font-size-20 g-color-black g-mb-15"> Sub Topic Title</h3>
-                    <span class="u-tags-v1 text-center g-width-130 g-brd-around g-brd-primary g-bg-primary g-color-white g-rounded-50 g-py-4 g-px-15">Declined</span>
-                  </header>
-
-                  <hr class="d-flex g-brd-gray-light-v7 g-mx-20 g-mx-30--sm my-0">
-
-                  <div class="card-block d-flex justify-content-between g-px-20 g-px-30--sm g-py-15 g-py-20--sm">
-                    <div>
-                      <h4 class="g-line-height-1_2 g-font-weight-300 g-font-size-28 g-color-black">25</h4>
-                      <em class="g-font-style-normal g-font-weight-300 g-font-size-16 g-color-gray-dark-v6">Topics</em>
-                    </div>
-
-                    <div>
-                      <h4 class="g-line-height-1_2 g-font-weight-300 g-font-size-28 g-color-black">23</h4>
-                      <em class="g-font-style-normal g-font-weight-300 g-font-size-16 g-color-gray-dark-v6">Videos</em>
-                    </div>
-
-                    <div>
-                      <h4 class="g-line-height-1_2 g-font-weight-300 g-font-size-28 g-color-black">7</h4>
-                      <em class="g-font-style-normal g-font-weight-300 g-font-size-16 g-color-gray-dark-v6">Quiz</em>
-                    </div>
-                  </div>
-                  <hr class="d-flex g-brd-gray-light-v7 g-mx-20 g-mx-30--sm my-0">
-
-                  <div class="card-block g-px-20 g-px-30--sm g-py-10 g-py-15--sm">
-                    <div class="media align-self-center g-mb-5">
-                      <div class="d-flex g-width-100 g-font-weight-300 g-color-gray-dark-v10">Content Upload</div>
-
-                      <div class="media-body align-self-center">
-                        <div class="progress g-height-4 g-rounded-2">
-                          <div class="progress-bar g-bg-lightblue-v3 g-rounded-2" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-                      <div class="d-flex align-self-center justify-content-end g-font-weight-300 g-color-black g-width-40">16%</div>
-                    </div>
-                  </div>
-
-                  <hr class="d-flex g-brd-gray-light-v7 g-mx-20 g-mx-30--sm my-0">
-
-                  <div class="card-block g-px-20 g-px-30--sm g-py-15 g-py-20--sm">
-                    <div class="row g-mb-25">
-                      <div class="col-md-6 g-mb-25 g-mb-0--md">
-                        <h5 class="g-font-size-default g-color-gray-dark-v6 g-mb-5">Last Updated</h5>
-                        <p class="g-color-black mb-0">12 Jun 2017</p>
-                      </div>
-
-                      <div class="col-md-6">
-                        <h5 class="g-font-size-default g-color-gray-dark-v6 g-mb-5">Video Length</h5>
-                        <p class="g-color-black mb-0">6h
-                          <span class="g-hidden-md-down">43min&nbsp;</span>
-                          <span class="g-hidden-md-up">.</span>
-                          total length
-                        </p>
-                      </div>
-                    </div>
-
-                    <!-- <div class="g-mb-25">
-                      <h5 class="g-font-size-default g-color-gray-dark-v6 g-mb-5">Last edited</h5>
-                      <p class="g-color-black mb-0">New design uploaded by Adam</p>
-                    </div> -->
-
-                    <!-- <ul class="list-inline mb-0">
-                      <li class="list-inline-item g-mb-10 g-mb-0--sm">
-                        <img class="g-width-40 g-height-40 rounded-circle" src="assets/b-assets/img-temp/100x100/img14.jpg" alt="Image Description">
-                      </li>
-                      <li class="list-inline-item g-mb-10 g-mb-0--sm">
-                        <img class="g-width-40 g-height-40 rounded-circle" src="assets/b-assets/img-temp/100x100/img17.jpg" alt="Image Description">
-                      </li>
-                      <li class="list-inline-item g-mb-10 g-mb-0--sm">
-                        <div class="d-flex align-items-center justify-content-center g-width-40 g-height-40 g-bg-secondary g-color-white rounded-circle g-pos-rel g-top-1">+4</div>
-                      </li>
-                      <li class="list-inline-item g-mb-10 g-mb-0--sm">
-                        <a class="d-flex align-items-center justify-content-center u-link-v5 g-width-40 g-height-40 g-bg-gray-light-v8 g-bg-primary--hover g-color-secondary g-color-white--hover rounded-circle g-pos-rel g-top-1" href="#!">
-                          <i class="hs-admin-plus"></i>
-                        </a>
-                      </li>
-                    </ul> -->
-                  </div>
-                </div>
-              </div>
-
-                <div class="col-md-6 col-lg-4 g-mb-30">
-                <div class="card h-100 g-brd-gray-light-v7 rounded">
-                  <header class="card-header g-bg-transparent g-brd-bottom-none g-pa-20 g-pa-30--sm">
-                    <div class="media g-mb-15">
-                      <div class="d-flex align-self-center">Chapter One</div>
-
-                      <div class="media-body d-flex justify-content-end">
-                        <div class="g-pos-rel g-z-index-2">
-                          <a id="dropDown1Invoker" class="u-link-v5 g-line-height-0 g-font-size-24 g-color-gray-light-v6 g-color-secondary--hover" href="#!" aria-controls="dropDown1" aria-haspopup="true" aria-expanded="false" data-dropdown-event="click" data-dropdown-target="#dropDown1" data-dropdown-type="jquery-slide">
-                            <i class="hs-admin-more-alt g-ml-20"></i>
-                          </a>
-
-                          <div id="dropDown1" class="u-shadow-v31 g-pos-abs g-right-0 g-bg-white u-dropdown--jquery-slide u-dropdown--hidden" aria-labelledby="dropDown1Invoker" style="display: none;">
-                            <ul class="list-unstyled g-nowrap mb-0">
-                              <li>
-                                <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
-                                  <i class="hs-admin-pencil g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
-                                  Edit
-                                </a>
-                              </li>
-                              <li>
-                                <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
-                                  <i class="hs-admin-archive g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
-                                  Archive
-                                </a>
-                              </li>
-                              <li>
-                                <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
-                                  <i class="hs-admin-check g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
-                                  Mark as Done
-                                </a>
-                              </li>
-                              <li>
-                                <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
-                                  <i class="hs-admin-plus g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
-                                  New Task
-                                </a>
-                              </li>
-                              <li>
-                                <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
-                                  <i class="hs-admin-trash g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
-                                  Delete
-                                </a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <h3 class="g-font-weight-300 g-font-size-20 g-color-black g-mb-15"> Sub Topic Title</h3>
-                    <span class="u-tags-v1 text-center g-width-130 g-brd-around g-brd-primary g-bg-primary g-color-white g-rounded-50 g-py-4 g-px-15">Declined</span>
-                  </header>
-
-                  <hr class="d-flex g-brd-gray-light-v7 g-mx-20 g-mx-30--sm my-0">
-
-                  <div class="card-block d-flex justify-content-between g-px-20 g-px-30--sm g-py-15 g-py-20--sm">
-                    <div>
-                      <h4 class="g-line-height-1_2 g-font-weight-300 g-font-size-28 g-color-black">25</h4>
-                      <em class="g-font-style-normal g-font-weight-300 g-font-size-16 g-color-gray-dark-v6">Topics</em>
-                    </div>
-
-                    <div>
-                      <h4 class="g-line-height-1_2 g-font-weight-300 g-font-size-28 g-color-black">23</h4>
-                      <em class="g-font-style-normal g-font-weight-300 g-font-size-16 g-color-gray-dark-v6">Videos</em>
-                    </div>
-
-                    <div>
-                      <h4 class="g-line-height-1_2 g-font-weight-300 g-font-size-28 g-color-black">7</h4>
-                      <em class="g-font-style-normal g-font-weight-300 g-font-size-16 g-color-gray-dark-v6">Quiz</em>
-                    </div>
-                  </div>
-                  <hr class="d-flex g-brd-gray-light-v7 g-mx-20 g-mx-30--sm my-0">
-
-                  <div class="card-block g-px-20 g-px-30--sm g-py-10 g-py-15--sm">
-                    <div class="media align-self-center g-mb-5">
-                      <div class="d-flex g-width-100 g-font-weight-300 g-color-gray-dark-v10">Content Upload</div>
-
-                      <div class="media-body align-self-center">
-                        <div class="progress g-height-4 g-rounded-2">
-                          <div class="progress-bar g-bg-lightblue-v3 g-rounded-2" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-                      <div class="d-flex align-self-center justify-content-end g-font-weight-300 g-color-black g-width-40">16%</div>
-                    </div>
-                  </div>
-
-                  <hr class="d-flex g-brd-gray-light-v7 g-mx-20 g-mx-30--sm my-0">
-
-                  <div class="card-block g-px-20 g-px-30--sm g-py-15 g-py-20--sm">
-                    <div class="row g-mb-25">
-                      <div class="col-md-6 g-mb-25 g-mb-0--md">
-                        <h5 class="g-font-size-default g-color-gray-dark-v6 g-mb-5">Last Updated</h5>
-                        <p class="g-color-black mb-0">12 Jun 2017</p>
-                      </div>
-
-                      <div class="col-md-6">
-                        <h5 class="g-font-size-default g-color-gray-dark-v6 g-mb-5">Video Length</h5>
-                        <p class="g-color-black mb-0">6h
-                          <span class="g-hidden-md-down">43min&nbsp;</span>
-                          <span class="g-hidden-md-up">.</span>
-                          total length
-                        </p>
-                      </div>
-                    </div>
-
-                    <!-- <div class="g-mb-25">
-                      <h5 class="g-font-size-default g-color-gray-dark-v6 g-mb-5">Last edited</h5>
-                      <p class="g-color-black mb-0">New design uploaded by Adam</p>
-                    </div> -->
-
-                    <!-- <ul class="list-inline mb-0">
-                      <li class="list-inline-item g-mb-10 g-mb-0--sm">
-                        <img class="g-width-40 g-height-40 rounded-circle" src="assets/b-assets/img-temp/100x100/img14.jpg" alt="Image Description">
-                      </li>
-                      <li class="list-inline-item g-mb-10 g-mb-0--sm">
-                        <img class="g-width-40 g-height-40 rounded-circle" src="assets/b-assets/img-temp/100x100/img17.jpg" alt="Image Description">
-                      </li>
-                      <li class="list-inline-item g-mb-10 g-mb-0--sm">
-                        <div class="d-flex align-items-center justify-content-center g-width-40 g-height-40 g-bg-secondary g-color-white rounded-circle g-pos-rel g-top-1">+4</div>
-                      </li>
-                      <li class="list-inline-item g-mb-10 g-mb-0--sm">
-                        <a class="d-flex align-items-center justify-content-center u-link-v5 g-width-40 g-height-40 g-bg-gray-light-v8 g-bg-primary--hover g-color-secondary g-color-white--hover rounded-circle g-pos-rel g-top-1" href="#!">
-                          <i class="hs-admin-plus"></i>
-                        </a>
-                      </li>
-                    </ul> -->
-                  </div>
-                </div>
-              </div>
-
-                <div class="col-md-6 col-lg-4 g-mb-30">
-                <div class="card h-100 g-brd-gray-light-v7 rounded">
-                  <header class="card-header g-bg-transparent g-brd-bottom-none g-pa-20 g-pa-30--sm">
-                    <div class="media g-mb-15">
-                      <div class="d-flex align-self-center">Chapter One</div>
-
-                      <div class="media-body d-flex justify-content-end">
-                        <div class="g-pos-rel g-z-index-2">
-                          <a id="dropDown1Invoker" class="u-link-v5 g-line-height-0 g-font-size-24 g-color-gray-light-v6 g-color-secondary--hover" href="#!" aria-controls="dropDown1" aria-haspopup="true" aria-expanded="false" data-dropdown-event="click" data-dropdown-target="#dropDown1" data-dropdown-type="jquery-slide">
-                            <i class="hs-admin-more-alt g-ml-20"></i>
-                          </a>
-
-                          <div id="dropDown1" class="u-shadow-v31 g-pos-abs g-right-0 g-bg-white u-dropdown--jquery-slide u-dropdown--hidden" aria-labelledby="dropDown1Invoker" style="display: none;">
-                            <ul class="list-unstyled g-nowrap mb-0">
-                              <li>
-                                <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
-                                  <i class="hs-admin-pencil g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
-                                  Edit
-                                </a>
-                              </li>
-                              <li>
-                                <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
-                                  <i class="hs-admin-archive g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
-                                  Archive
-                                </a>
-                              </li>
-                              <li>
-                                <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
-                                  <i class="hs-admin-check g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
-                                  Mark as Done
-                                </a>
-                              </li>
-                              <li>
-                                <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
-                                  <i class="hs-admin-plus g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
-                                  New Task
-                                </a>
-                              </li>
-                              <li>
-                                <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
-                                  <i class="hs-admin-trash g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
-                                  Delete
-                                </a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <h3 class="g-font-weight-300 g-font-size-20 g-color-black g-mb-15"> Sub Topic Title</h3>
-                    <span class="u-tags-v1 text-center g-width-130 g-brd-around g-brd-primary g-bg-primary g-color-white g-rounded-50 g-py-4 g-px-15">Declined</span>
-                  </header>
-
-                  <hr class="d-flex g-brd-gray-light-v7 g-mx-20 g-mx-30--sm my-0">
-
-                  <div class="card-block d-flex justify-content-between g-px-20 g-px-30--sm g-py-15 g-py-20--sm">
-                    <div>
-                      <h4 class="g-line-height-1_2 g-font-weight-300 g-font-size-28 g-color-black">25</h4>
-                      <em class="g-font-style-normal g-font-weight-300 g-font-size-16 g-color-gray-dark-v6">Topics</em>
-                    </div>
-
-                    <div>
-                      <h4 class="g-line-height-1_2 g-font-weight-300 g-font-size-28 g-color-black">23</h4>
-                      <em class="g-font-style-normal g-font-weight-300 g-font-size-16 g-color-gray-dark-v6">Videos</em>
-                    </div>
-
-                    <div>
-                      <h4 class="g-line-height-1_2 g-font-weight-300 g-font-size-28 g-color-black">7</h4>
-                      <em class="g-font-style-normal g-font-weight-300 g-font-size-16 g-color-gray-dark-v6">Quiz</em>
-                    </div>
-                  </div>
-                  <hr class="d-flex g-brd-gray-light-v7 g-mx-20 g-mx-30--sm my-0">
-
-                  <div class="card-block g-px-20 g-px-30--sm g-py-10 g-py-15--sm">
-                    <div class="media align-self-center g-mb-5">
-                      <div class="d-flex g-width-100 g-font-weight-300 g-color-gray-dark-v10">Content Upload</div>
-
-                      <div class="media-body align-self-center">
-                        <div class="progress g-height-4 g-rounded-2">
-                          <div class="progress-bar g-bg-lightblue-v3 g-rounded-2" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-                      <div class="d-flex align-self-center justify-content-end g-font-weight-300 g-color-black g-width-40">16%</div>
-                    </div>
-                  </div>
-
-                  <hr class="d-flex g-brd-gray-light-v7 g-mx-20 g-mx-30--sm my-0">
-
-                  <div class="card-block g-px-20 g-px-30--sm g-py-15 g-py-20--sm">
-                    <div class="row g-mb-25">
-                      <div class="col-md-6 g-mb-25 g-mb-0--md">
-                        <h5 class="g-font-size-default g-color-gray-dark-v6 g-mb-5">Last Updated</h5>
-                        <p class="g-color-black mb-0">12 Jun 2017</p>
-                      </div>
-
-                      <div class="col-md-6">
-                        <h5 class="g-font-size-default g-color-gray-dark-v6 g-mb-5">Video Length</h5>
-                        <p class="g-color-black mb-0">6h
-                          <span class="g-hidden-md-down">43min&nbsp;</span>
-                          <span class="g-hidden-md-up">.</span>
-                          total length
-                        </p>
-                      </div>
-                    </div>
-
-                    <!-- <div class="g-mb-25">
-                      <h5 class="g-font-size-default g-color-gray-dark-v6 g-mb-5">Last edited</h5>
-                      <p class="g-color-black mb-0">New design uploaded by Adam</p>
-                    </div> -->
-
-                    <!-- <ul class="list-inline mb-0">
-                      <li class="list-inline-item g-mb-10 g-mb-0--sm">
-                        <img class="g-width-40 g-height-40 rounded-circle" src="assets/b-assets/img-temp/100x100/img14.jpg" alt="Image Description">
-                      </li>
-                      <li class="list-inline-item g-mb-10 g-mb-0--sm">
-                        <img class="g-width-40 g-height-40 rounded-circle" src="assets/b-assets/img-temp/100x100/img17.jpg" alt="Image Description">
-                      </li>
-                      <li class="list-inline-item g-mb-10 g-mb-0--sm">
-                        <div class="d-flex align-items-center justify-content-center g-width-40 g-height-40 g-bg-secondary g-color-white rounded-circle g-pos-rel g-top-1">+4</div>
-                      </li>
-                      <li class="list-inline-item g-mb-10 g-mb-0--sm">
-                        <a class="d-flex align-items-center justify-content-center u-link-v5 g-width-40 g-height-40 g-bg-gray-light-v8 g-bg-primary--hover g-color-secondary g-color-white--hover rounded-circle g-pos-rel g-top-1" href="#!">
-                          <i class="hs-admin-plus"></i>
-                        </a>
-                      </li>
-                    </ul> -->
-                  </div>
-                </div>
-              </div>
-
-                <div class="col-md-6 col-lg-4 g-mb-30">
-                <div class="card h-100 g-brd-gray-light-v7 rounded">
-                  <header class="card-header g-bg-transparent g-brd-bottom-none g-pa-20 g-pa-30--sm">
-                    <div class="media g-mb-15">
-                      <div class="d-flex align-self-center">Chapter One</div>
-
-                      <div class="media-body d-flex justify-content-end">
-                        <div class="g-pos-rel g-z-index-2">
-                          <a id="dropDown1Invoker" class="u-link-v5 g-line-height-0 g-font-size-24 g-color-gray-light-v6 g-color-secondary--hover" href="#!" aria-controls="dropDown1" aria-haspopup="true" aria-expanded="false" data-dropdown-event="click" data-dropdown-target="#dropDown1" data-dropdown-type="jquery-slide">
-                            <i class="hs-admin-more-alt g-ml-20"></i>
-                          </a>
-
-                          <div id="dropDown1" class="u-shadow-v31 g-pos-abs g-right-0 g-bg-white u-dropdown--jquery-slide u-dropdown--hidden" aria-labelledby="dropDown1Invoker" style="display: none;">
-                            <ul class="list-unstyled g-nowrap mb-0">
-                              <li>
-                                <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <a class="d-flex align-items-center js-fancybox u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!" data-src="#edit-form">
                                   <i class="hs-admin-pencil g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
                                   Edit
                                 </a>

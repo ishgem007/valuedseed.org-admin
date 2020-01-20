@@ -14,6 +14,13 @@ import ChangePassword from '@/views/ChangePassword'
 import Profile from '@/views/Profile'
 import EditProfile from '@/views/EditProfile'
 import Notification from '@/views/Notification'
+import Teachers from '@/views/Teachers'
+import Subject from '@/views/Subject'
+import Chapter from '@/views/Chapter'
+import SubjectByTeacher from '@/views/SubjectByTeacher'
+import CompletedSubject from '@/views/CompletedSubject'
+import OngoingSubject from '@/views/OngoingSubject'
+import Store from '@/views/Store'
 
 import Newuser from '@/views/Newuser'
 import Allusers from '@/views/Allusers'
@@ -98,6 +105,7 @@ export default new VueRouter({
             component: Notification
         },
         {
+
             path: '/newnotification',
             name: 'Newnotification',
             component: Newnotification
@@ -106,6 +114,41 @@ export default new VueRouter({
             path: '/allnotification',
             name: 'Allnotification',
             component: Allnotification
+        },
+        {
+            path: '/all-teachers',
+            name: 'Teachers',
+            component: Teachers
+        },
+        {
+            path: '/for-single-subject',
+            name: 'Subject',
+            component: Subject
+        },
+        {
+            path: '/all-subtopics',
+            name: 'Chapter',
+            component: Chapter
+        },
+        {
+            path: '/subjects-and-teacher',
+            name: 'SubjectByTeacher',
+            component: SubjectByTeacher
+        },
+        {
+            path: '/completed-subjects',
+            name: 'CompletedSubject',
+            component: CompletedSubject
+        },
+        {
+            path: '/ongoing-subjects',
+            name: 'OngoingSubject',
+            component: OngoingSubject
+        },
+        {
+            path: '/store',
+            name: 'Store',
+            component: Store
         }
     ],
     mode: 'history',

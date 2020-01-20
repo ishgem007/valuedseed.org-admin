@@ -29,7 +29,7 @@
               </a>
 
               <!-- Personal information: Submenu-1 -->
-              <ul id="subMenu1" class="u-sidebar-navigation-v1-menu u-side-nav--second-level-menu mb-0" style="display: block;">
+              <ul id="subMenu1" class="u-sidebar-navigation-v1-menu u-side-nav--second-level-menu mb-0" style="display: none;">
                 <!-- Personal information u-side-nav-opened-->
                 <li class="u-sidebar-navigation-v1-menu-item u-side-nav--second-level-menu-item">
                   <a class="media u-side-nav--second-level-menu-link g-px-15 g-py-12" href="/profile">
@@ -67,10 +67,6 @@
                     <span class="media-body align-self-center">Account Details</span>
                           </a>
                 </li>
-                <!-- End Payment -->
-        
-      
-             
               </ul>
               <!-- End Dashboards: Submenu-1 -->
             </li>
@@ -114,16 +110,31 @@
               </ul>
             </li>
       
-      
               <!-- End Profile -->
-              
+              <li class="u-sidebar-navigation-v1-menu-item u-side-nav--top-level-menu-item">
+                    <a class="media u-side-nav--top-level-menu-link u-side-nav--hide-on-hidden g-px-15 g-py-12" href="/all-teachers">
+                      <span class="d-flex align-self-center g-pos-rel g-font-size-18 g-mr-18">
+                <i class="hs-admin-user"></i>
+                </span>
+                    <span class="media-body align-self-center">Teachers</span>
+                          </a>
+                </li>
               <!-- Projects -->
                   <li class="u-sidebar-navigation-v1-menu-item u-side-nav--top-level-menu-item">
                     <a class="media u-side-nav--top-level-menu-link u-side-nav--hide-on-hidden g-px-15 g-py-12" href="/all-projects">
                       <span class="d-flex align-self-center g-pos-rel g-font-size-18 g-mr-18">
-                <i class="hs-admin-layout-media-left"></i>
+                <i class="hs-admin-notepad"></i>
               </span>
-                      <span class="media-body align-self-center">Subject Chapters </span>
+                      <span class="media-body align-self-center">Subject and Chapters</span>
+                    </a>
+                  </li>
+
+                  <li class="u-sidebar-navigation-v1-menu-item u-side-nav--top-level-menu-item">
+                    <a class="media u-side-nav--top-level-menu-link u-side-nav--hide-on-hidden g-px-15 g-py-12" href="/subjects-and-teacher">
+                      <span class="d-flex align-self-center g-pos-rel g-font-size-18 g-mr-18">
+                <i class="hs-admin-notepad"></i>
+              </span>
+                      <span class="media-body align-self-center">Subjects </span>
                     </a>
                   </li>
                   <!-- End Projects  -->
@@ -138,6 +149,98 @@
               </a>
             </li> -->
             <!-- End Metrics -->
+              <!-- manage subject -->
+            <li class="u-sidebar-navigation-v1-menu-item u-side-nav--has-sub-menu u-side-nav--top-level-menu-item u-side-nav-opened">
+                    <a class="media u-side-nav--top-level-menu-link u-side-nav--hide-on-hidden g-px-15 g-py-12" href="#!" data-hssm-target="#subMenu3">
+                      <span class="d-flex align-self-center g-pos-rel g-font-size-18 g-mr-18">
+              <i class="hs-admin-pencil-alt"></i>
+            </span>
+                  <span class="media-body align-self-center">Manage Subjects</span>
+                  <span class="d-flex align-self-center u-side-nav--control-icon">
+              <i class="hs-admin-angle-right"></i>
+            </span>
+                <span class="u-side-nav--has-sub-menu__indicator"></span>
+              </a>
+
+              <!-- Personal information: Submenu-1 -->
+              <ul id="subMenu3" class="u-sidebar-navigation-v1-menu u-side-nav--second-level-menu mb-0" style="display: none;">
+                <!-- Personal information u-side-nav-opened-->
+                <li class="u-sidebar-navigation-v1-menu-item u-side-nav--second-level-menu-item">
+                  <a class="media u-side-nav--second-level-menu-link g-px-15 g-py-12" href="/completed-subjects">
+                    <span class="d-flex align-self-center g-mr-15 g-mt-minus-1">
+                <i class="hs-admin-angle-right"></i>
+              </span>
+                    <span class="media-body align-self-center">Completed Subjects</span>
+                  </a>
+                </li>
+                <!-- End Personal information -->
+
+                <!-- Ongoing -->
+                <li class="u-sidebar-navigation-v1-menu-item u-side-nav--second-level-menu-item">
+                  <a class="media u-side-nav--second-level-menu-link g-px-15 g-py-12" href="/ongoing-subjects">
+                    <span class="d-flex align-self-center g-mr-15 g-mt-minus-1">
+                  <i class="hs-admin-angle-right"></i>
+                </span>
+                    <span class="media-body align-self-center">Ongoing Subjects</span>
+                  </a>
+                </li>
+                <!-- End Ongoing -->   
+
+                <!-- Ongoing -->
+                <li class="u-sidebar-navigation-v1-menu-item u-side-nav--second-level-menu-item">
+                  <a class="media u-side-nav--second-level-menu-link g-px-15 g-py-12" href="/Ongoing">
+                    <span class="d-flex align-self-center g-mr-15 g-mt-minus-1">
+                  <i class="hs-admin-angle-right"></i>
+                </span>
+                    <span class="media-body align-self-center">Empty Subjects</span>
+                  </a>
+                </li>
+                <!-- End Ongoing -->     
+              </ul>
+              <!-- End Dashboards: Submenu-1 -->
+            </li>
+            <!-- manage products-->
+            <li class="u-sidebar-navigation-v1-menu-item u-side-nav--has-sub-menu u-side-nav--top-level-menu-item u-side-nav-opened">
+                    <a class="media u-side-nav--top-level-menu-link u-side-nav--hide-on-hidden g-px-15 g-py-12" href="#!" data-hssm-target="#subMenu4">
+                      <span class="d-flex align-self-center g-pos-rel g-font-size-18 g-mr-18">
+              <i class="hs-admin-view-list"></i>
+            </span>
+                  <span class="media-body align-self-center">Manage Products</span>
+                  <span class="d-flex align-self-center u-side-nav--control-icon">
+              <i class="hs-admin-angle-right"></i>
+            </span>
+                <span class="u-side-nav--has-sub-menu__indicator"></span>
+              </a>
+
+              <!-- Personal information: Submenu-1 -->
+              <ul id="subMenu4" class="u-sidebar-navigation-v1-menu u-side-nav--second-level-menu mb-0" style="display: none;">
+
+                <!-- Personal information u-side-nav-opened-->
+                <!-- <li class="u-sidebar-navigation-v1-menu-item u-side-nav--second-level-menu-item">
+                  <a class="media u-side-nav--second-level-menu-link g-px-15 g-py-12" href="/create-products">
+                    <span class="d-flex align-self-center g-mr-15 g-mt-minus-1">
+                <i class="hs-admin-plus"></i>
+              </span>
+                    <span class="media-body align-self-center">Add Product</span>
+                  </a>
+                </li> -->
+
+
+                <!-- End Personal information -->  
+
+                <!-- Ongoing -->
+                <li class="u-sidebar-navigation-v1-menu-item u-side-nav--second-level-menu-item">
+                  <a class="media u-side-nav--second-level-menu-link g-px-15 g-py-12" href="/store">
+                    <span class="d-flex align-self-center g-mr-15 g-mt-minus-1">
+                  <i class="hs-admin-view-list-alt"></i>
+                </span>
+                    <span class="media-body align-self-center">Store</span>
+                  </a>
+                </li>
+                <!-- End Ongoing -->     
+              </ul>
+              <!-- End Dashboards: Submenu-1 -->
+            </li>
 
               <li class="u-sidebar-navigation-v1-menu-item u-side-nav--has-sub-menu u-side-nav--top-level-menu-item u-side-nav-opened">
               <a class="media u-side-nav--top-level-menu-link u-side-nav--hide-on-hidden g-px-15 g-py-12" href="#" data-hssm-target="#subMenu1">
@@ -175,7 +278,7 @@
             <li class="u-sidebar-navigation-v1-menu-item u-side-nav--has-sub-menu u-side-nav--top-level-menu-item u-side-nav-opened">
                     <a class="media u-side-nav--top-level-menu-link u-side-nav--hide-on-hidden g-px-15 g-py-12" href="#!" data-hssm-target="#subMenu2">
                       <span class="d-flex align-self-center g-pos-rel g-font-size-18 g-mr-18">
-              <i class="hs-admin-user"></i>
+              <i class="hs-admin-settings"></i>
             </span>
                   <span class="media-body align-self-center">Other</span>
                   <span class="d-flex align-self-center u-side-nav--control-icon">
@@ -185,7 +288,7 @@
               </a>
 
               <!-- Personal information: Submenu-1 -->
-              <ul id="subMenu2" class="u-sidebar-navigation-v1-menu u-side-nav--second-level-menu mb-0" style="display: block;">
+              <ul id="subMenu2" class="u-sidebar-navigation-v1-menu u-side-nav--second-level-menu mb-0" style="display: none;">
                 <!-- Personal information u-side-nav-opened-->
                 <li class="u-sidebar-navigation-v1-menu-item u-side-nav--second-level-menu-item">
                   <a class="media u-side-nav--second-level-menu-link g-px-15 g-py-12" href="/change-password">

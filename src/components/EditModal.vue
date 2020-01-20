@@ -1,5 +1,5 @@
 <template>
-    <div id="new-project-form" class="rounded-0 p-0" style="display: none; width: 790px; max-width: 100%;">
+    <div id="edit-form" class="rounded-0 p-0" style="display: none; width: 790px; max-width: 100%;">
     <header class="g-bg-gray-light-v8 g-px-15 g-px-30--sm g-py-20">
       <h2 class="g-font-weight-300 g-font-size-16 g-color-black mb-0">Create New Chapter</h2>
     </header>
@@ -18,8 +18,8 @@
       </h3>
 
         <div class="form-group g-mb-35">
-          <textarea class="form-control form-control-md g-resize-none g-line-height-1_6 g-brd-gray-light-v7 g-brd-lightblue-v3--focus g-pa-20" rows="5">
-          </textarea>
+          <textarea class="form-control form-control-md g-resize-none g-line-height-1_6 g-brd-gray-light-v7 g-brd-lightblue-v3--focus g-pa-20" rows="5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit blanditiis, doloremque libero assumenda et qui, vel placeat quos in consequuntur iure quam alias modi quidem, praesentium. Voluptatibus tenetur deleniti eaque! periam et facere voluptas
+            commodi natus blanditiis laborum quasi ea, possimus quae cupiditate distinctio, tenetur ullam quidem inventore fuga eaque incidunt reiciendis. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</textarea>
         </div>
 
         <div class="g-mb-35">
@@ -161,5 +161,5 @@ export default {
       // pageScript.setAttribute('src', 'assets/assets/bottom.js')
       // document.head.appendChild(pageScript)
     }
-};
+}
 </script>

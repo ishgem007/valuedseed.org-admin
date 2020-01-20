@@ -49,7 +49,7 @@
   <!-- CSS Customization -->
   <link rel="stylesheet" href="assets/b-assets/css/custom.css">
 
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+  <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script> -->
 
   
 </head>
@@ -60,8 +60,8 @@
     <div id="app"></div>
     <!-- built files will be auto injected -->
   <!-- JS Global Compulsory -->
-
-  <script src="assets/assets/vendor/jquery/jquery.min.js"></script>
+  <!-- <script src="assets/assets/vendor/jquery/jquery.min.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="assets/assets/vendor/jquery-migrate/jquery-migrate.min.js"></script>
   <script src="assets/b-assets/vendor/popper.js/popper.min.js"></script>
   <script src="assets/b-assets/vendor/bootstrap/bootstrap.min.js"></script>
@@ -85,7 +85,9 @@
 
   <!-- JS Plugins Init. -->
   <script src="assets/b-assets/vendor/appear.js"></script>
-  <script src="assets/assets/vendor/bootstrap-select/js/bootstrap-select.min.js"></script>
+  <script src="assets/assets/vendor/bloodhound-js/js/bloodhound.min.js"></script>
+  <script src="assets/assets/vendor/bloodhound-js/js/typeahead.jquery.min.js"></script>
+
   <script src="assets/assets/vendor/multiselect/js/jquery.multi-select.js"></script>
   <script src="assets/assets/vendor/flatpickr/dist/js/flatpickr.min.js"></script>
   <script src="assets/b-assets/vendor/malihu-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
@@ -117,77 +119,101 @@
   <script src="assets/assets/js/components/hs.popup.js"></script>
   <script src="assets/assets/js/components/hs.datatables.js"></script>
 
-  <script src="assets/b-assets/vendor/jquery.filer/js/jquery.filer.min.js"></script>
+  <script src="assets/b-assets/vendor/jquery.filer/js/jquery.filer.min.js"></script> 
 
   <script src="assets/assets/js/components/hs.file-attachement.js"></script>
+  <script src="assets/assets/js/components/hs.file-upload.js"></script>
   <!-- JS Custom -->
   <script src="assets/b-assets/js/custom.js"></script>
  <script src="assets/assets/vendor/bootstrap-tagsinput/js/bootstrap-tagsinput.min.js"></script>
+   <script src="assets/assets/vendor/bootstrap-select/js/bootstrap-select.min.js"></script>
   
 
   <!-- JS Plugins Init. --> 
   <script>
     $(document).on('ready', function () {
+
+      console.log('yeba!');
       // initialization of custom select
       $('.js-select').selectpicker();
-  
+
+      // initialization of sidebar navigation component
+      $.HSCore.components.HSSideNav.init('.js-side-nav');
+
       // initialization of hamburger
       $.HSCore.helpers.HSHamburgers.init('.hamburger');
-  
+
       // initialization of charts
-      $.HSCore.components.HSAreaChart.init('.js-area-chart');
-      $.HSCore.components.HSDonutChart.init('.js-donut-chart');
       $.HSCore.components.HSBarChart.init('.js-bar-chart');
-  
-      // initialization of sidebar navigation component
-      $.HSCore.components.HSSideNav.init('.js-side-nav', {
-        afterOpen: function() {
-          setTimeout(function() {
-            $.HSCore.components.HSAreaChart.init('.js-area-chart');
-            $.HSCore.components.HSDonutChart.init('.js-donut-chart');
-            $.HSCore.components.HSBarChart.init('.js-bar-chart');
-          }, 400);
-        },
-        afterClose: function() {
-          setTimeout(function() {
-            $.HSCore.components.HSAreaChart.init('.js-area-chart');
-            $.HSCore.components.HSDonutChart.init('.js-donut-chart');
-            $.HSCore.components.HSBarChart.init('.js-bar-chart');
-          }, 400);
-        }
-      });
-  
-      // initialization of range datepicker
-      $.HSCore.components.HSRangeDatepicker.init('#rangeDatepicker, #rangeDatepicker2, #rangeDatepicker3');
-  
-      // initialization of datepicker
-      $.HSCore.components.HSDatepicker.init('#datepicker', {
-        dayNamesMin: [
-          'SU',
-          'MO',
-          'TU',
-          'WE',
-          'TH',
-          'FR',
-          'SA'
-        ]
-      });
-  
+
       // initialization of HSDropdown component
       $.HSCore.components.HSDropdown.init($('[data-dropdown-target]'), {dropdownHideOnScroll: false});
-  
+
+      // initialization of range slider
+      // $.HSCore.components.HSSlider.init('#regularSlider');
+
+      // initialization of tags input
+      var tags = new Bloodhound({datumTokenizer: Bloodhound.tokenizers.obj.whitespace('text'), queryTokenizer: Bloodhound.tokenizers.whitespace, prefetch: 'assets/assets/include/ajax/tags.json'});
+
+      tags.initialize();
+
+      var elt = $('.js-tagsinput');
+
+      elt.tagsinput({
+        tagClass: function (item) {
+          switch (item.group) {
+            case 'design':
+              return 'u-tags-v1 g-color-white g-bg-teal-v2 g-bg-black--hover g-rounded-50 g-py-5 g-px-20 g-mb-10 g-mb-0--sm';
+            case 'marketing':
+              return 'u-tags-v1 g-color-white g-bg-secondary g-bg-black--hover g-rounded-50 g-py-5 g-px-20 g-mb-10 g-mb-0--sm';
+            case 'themes':
+              return 'u-tags-v1 g-color-white g-bg-primary g-bg-black--hover g-rounded-50 g-py-5 g-px-20 g-mb-10 g-mb-0--sm';
+          }
+        },
+        itemValue: 'value',
+        itemText: 'text',
+        typeaheadjs: {
+          name: 'tags',
+          displayKey: 'text',
+          source: tags.ttAdapter()
+        }
+      });
+
+      elt.tagsinput('add', {
+        "value": "design",
+        "text": "Design",
+        "group": "design"
+      });
+      elt.tagsinput('add', {
+        "value": "marketing",
+        "text": "Marketing",
+        "group": "marketing"
+      });
+      elt.tagsinput('add', {
+        "value": "unify",
+        "text": "Unify",
+        "group": "themes"
+      });
+
       // initialization of custom scrollbar
       $.HSCore.components.HSScrollBar.init($('.js-custom-scroll'));
+
   
       // initialization of forms
       $.HSCore.components.HSFileAttachment.init('.js-file-attachment');
 
+
+      // initialization of range datepicker
+      $.HSCore.components.HSRangeDatepicker.init('#datepicker');
+
+
       // initialization of popups
       $.HSCore.components.HSPopup.init('.js-fancybox', {
         btnTpl: {
-          smallBtn: '<button data-fancybox-close class="btn g-pos-abs g-top-25 g-right-30 g-line-height-1 g-bg-transparent g-font-size-16 g-color-gray-light-v3 g-brd-none p-0" title=""><i class="hs-admin-close"></i></button>'
+          smallBtn: '<button data-fancybox-close class="btn g-pos-abs g-top-25 g-right-30 g-line-height-1 g-bg-transparent g-font-size-16 g-color-gray-light-v6 g-brd-none p-0" title=""><i class="hs-admin-close"></i></button>'
         }
       });
+
 
       // initialization of editable table
       $('.js-editable-table tr').editable({
@@ -212,6 +238,10 @@
 
       // initialization of text editors
       $.HSCore.components.HSTextEditor.init('.js-text-editor');
+
+      // initialization of file upload
+      $.HSCore.components.HSFileUpload.init('.js-file-upload');
+
     });
   </script>
 </body>
