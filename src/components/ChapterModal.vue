@@ -161,5 +161,5 @@ export default {
       // pageScript.setAttribute('src', 'assets/assets/bottom.js')
       // document.head.appendChild(pageScript)
     }
-}
+};
 </script>

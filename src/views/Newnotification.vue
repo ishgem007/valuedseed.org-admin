@@ -7,53 +7,30 @@
         <div class="col g-ml-45 g-ml-0--lg g-pb-65--md">
           <div class="g-bg-lightblue-v10-opacity-0_5 g-pa-20">
               <!-- Panel score Card -->
-              <Panel />
-
-               <AdminPanel />
+              <sendNotification /> 
                 <!-- End Profile Sidebar Nav -->
-                <!-- Other Profile Info -->
-              <Projects />
-                <!-- End Other Profile Info -->
+               
           </div>
           <Footer />
         </div>
       </div>
     </main>
-    <NewChapter />
-    <EditModal />
 </div>
-</template>
+</template> 
 <script>
 import Header from '../components/Header.vue'
 import Sidebar from '../components/Sidebar.vue'
-import Panel from '../components/Panel.vue'
-import Projects from '../components/Projects.vue'
+import sendNotification from '../components/sendNotification.vue'
 import Footer from '../components/Footer.vue'
-import NewChapter from '../components/ChapterModal.vue'
-
-import AdminPanel from '../components/adminPanel.vue'
-
-import EditModal from '../components/EditModal.vue'
-
 
 // let $ = JQuery
 export default {
-  name:'Dashboard',
+  name:'Newnotification',
   components:{
     Header,
     Sidebar,
-    Panel,
-    Projects,
-    Footer,
-    NewChapter,
-    AdminPanel,
-    EditModal
+    sendNotification,
+    Footer
   },
-  mounted() {
-     
-  },
-  destroyed(){
-     
-  }
-}
+};
 </script>

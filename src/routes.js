@@ -22,6 +22,12 @@ import CompletedSubject from '@/views/CompletedSubject'
 import OngoingSubject from '@/views/OngoingSubject'
 import Store from '@/views/Store'
 
+import Newuser from '@/views/Newuser'
+import Allusers from '@/views/Allusers'
+import Bankdetails from '@/views/Bankdetails'
+import Newnotification from '@/views/Newnotification'
+import Allnotification from '@/views/Allnotification'
+
 
 Vue.use(VueRouter)
 
@@ -79,9 +85,35 @@ export default new VueRouter({
             component: ChangePassword
         },
         {
+            path: '/newuser',
+            name: 'Newuser',
+            component: Newuser
+        },
+        {
+            path: '/allusers',
+            name: 'Allusers',
+            component: Allusers
+        },
+        {
+            path: '/bankdetails',
+            name: 'Bankdetails',
+            component: Bankdetails
+        },
+        {
             path: '/notification',
             name: 'Notification',
             component: Notification
+        },
+        {
+
+            path: '/newnotification',
+            name: 'Newnotification',
+            component: Newnotification
+        },
+        {
+            path: '/allnotification',
+            name: 'Allnotification',
+            component: Allnotification
         },
         {
             path: '/all-teachers',
