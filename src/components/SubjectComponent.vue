@@ -42,9 +42,8 @@
                     <th>#</th>
                     <th>Chapter's Title</th>
                     <th>Description</th>
-                    <th>no of topics</th>
                     <th>Status</th>
-                    <th>More</th>
+                    <th>Action</th>
                   </tr>
                 </thead>
 
@@ -53,60 +52,70 @@
                     <td>1</td>
                     <td>Intr. to Chemistry</td>
                     <td>is simply dummy text of the printing and typesetting industry. Lorem Ipsum</td>
-                    <td>10</td>
+                    
                     <td>
                       <span class="u-tags-v1 text-center g-width-110 g-brd-around g-brd-teal-v2 g-bg-teal-v2 g-font-weight-400 g-color-white g-rounded-50 g-py-4 g-px-15">Completed</span>
                     </td>
                     <td>
-                      <span class="btn btn-info g-rounded-50" style="background:#f4f4f4;border-color:#f4f4f4;color:#000;"> <a href="/all-subtopics"><i class="hs-admin-arrow-circle-right"></i></a></span>
+                      <span class="btn btn-info g-rounded-50" style="background:#f4f4f4;color:#000;border-color:#f4f4f4;"> <a href="#!"><i class="hs-admin-download"></i></a></span>
+                      <span class="btn btn-info g-rounded-50" style="background:#5bc0de;color:#fff !important;margin-left:3px;border-color:#5bc0de;"> <a href="#!"><i class="hs-admin-check-box" style="color:#fff !important;"></i></a></span>
+                      <span class="btn btn-info g-rounded-50" style="background:#d9534f;color:#fff !important;margin-left:3px;border-color:#d9534f;"> <a href="#!"><i class="hs-admin-close" style="color:#fff !important;"></i></a></span>
                     </td>
                   </tr>
                   <tr>
                     <td>2</td>
                     <td>Gas Laws</td>
                     <td>is simply dummy text of the printing and typesetting industry. Lorem Ipsum</td>
-                    <td>7</td>
+                    
                     <td>
                      <span class="u-tags-v1 text-center g-width-110 g-brd-around g-brd-teal-v2 g-bg-teal-v2 g-font-weight-400 g-color-white g-rounded-50 g-py-4 g-px-15">Completed</span>
                     </td>
                     <td>
-                      <span class="btn btn-info g-rounded-50" style="background:#f4f4f4;border-color:#f4f4f4;color:#000;"> <a href="/all-subtopics"><i class="hs-admin-arrow-circle-right"></i></a></span>
+                      <span class="btn btn-info g-rounded-50" style="background:#f4f4f4;color:#000;border-color:#f4f4f4;"> <a href="#!"><i class="hs-admin-download"></i></a></span>
+                      <span class="btn btn-info g-rounded-50" style="background:#5bc0de;color:#fff !important;margin-left:3px;border-color:#5bc0de;"> <a href="#!"><i class="hs-admin-check-box" style="color:#fff !important;"></i></a></span>
+                      <span class="btn btn-info g-rounded-50" style="background:#d9534f;color:#fff !important;margin-left:3px;border-color:#d9534f;"> <a href="#!"><i class="hs-admin-close" style="color:#fff !important;"></i></a></span>
                     </td>
                   </tr>
                   <tr>
                     <td>3</td>
                     <td>Sepration Techniques</td>
                     <td>is simply dummy text of the printing and typesetting industry. Lorem Ipsum</td>
-                    <td>10</td>
+                    
                     <td>
-                      <span class="u-tags-v1 text-center g-width-110 g-brd-around g-brd-primary g-bg-primary g-font-weight-400 g-color-white g-rounded-50 g-py-4 g-px-15">Empty</span>
+                      <span class="u-tags-v1 text-center g-width-110 g-brd-around g-brd-primary g-bg-primary g-font-weight-400 g-color-white g-rounded-50 g-py-4 g-px-15">To-do</span>
                     </td>
                     <td>
-                      <span class="btn btn-info g-rounded-50" style="background:#f4f4f4;border-color:#f4f4f4;color:#000;"> <a href="/all-subtopics"><i class="hs-admin-arrow-circle-right"></i></a></span>
+                      <span class="btn btn-info g-rounded-50" style="background:#f4f4f4;color:#000;border-color:#f4f4f4;"> <a href="#!"><i class="hs-admin-download"></i></a></span>
+                      <span class="btn btn-info g-rounded-50" style="background:#5bc0de;color:#fff !important;margin-left:3px;border-color:#5bc0de;"> <a href="#!"><i class="hs-admin-check-box" style="color:#fff !important;"></i></a></span>
+                      <span class="btn btn-info g-rounded-50" style="background:#d9534f;color:#fff !important;margin-left:3px;border-color:#d9534f;"> <a href="#!"><i class="hs-admin-close" style="color:#fff !important;"></i></a></span>
                     </td>
                   </tr>
                   <tr>
                     <td>4</td>
                     <td>Boyle's Law</td>
                     <td>is simply dummy text of the printing and typesetting industry. Lorem Ipsum</td>
-                    <td>4</td>
+                    
                     <td>
-                      <span class="u-tags-v1 text-center g-width-110 g-brd-around g-brd-primary g-bg-primary g-font-weight-400 g-color-white g-rounded-50 g-py-4 g-px-15">Empty</span>
+                      <span class="u-tags-v1 text-center g-width-110 g-brd-around g-brd-primary g-bg-primary g-font-weight-400 g-color-white g-rounded-50 g-py-4 g-px-15">To-do</span>
                     </td>
                     <td>
-                      <span class="btn btn-info g-rounded-50" style="background:#f4f4f4;border-color:#f4f4f4;color:#000;"> <a href="/all-subtopics"><i class="hs-admin-arrow-circle-right"></i></a></span>
+                      <span class="btn btn-info g-rounded-50" style="background:#f4f4f4;color:#000;border-color:#f4f4f4;"> <a href="#!"><i class="hs-admin-download"></i></a></span>
+                      <span class="btn btn-info g-rounded-50" style="background:#5bc0de;color:#fff !important;margin-left:3px;border-color:#5bc0de;"> <a href="#!"><i class="hs-admin-check-box" style="color:#fff !important;"></i></a></span>
+                      <span class="btn btn-info g-rounded-50" style="background:#d9534f;color:#fff !important;margin-left:3px;border-color:#d9534f;"> <a href="#!"><i class="hs-admin-close" style="color:#fff !important;"></i></a></span>
                     </td>
                   </tr>
                   <tr>
                     <td>5</td>
                     <td>Charlse Law</td>
                     <td>is simply dummy text of the printing and typesetting industry. Lorem Ipsum</td>
-                    <td>3</td>
+                    
                     <td>
                       <span class="u-tags-v1 text-center g-width-110 g-brd-around g-brd-teal-v2 g-bg-teal-v2 g-font-weight-400 g-color-white g-rounded-50 g-py-4 g-px-15">Completed</span>
                     </td>
                     <td>
-              <span class="btn btn-info g-rounded-50" style="background:#f4f4f4;border-color:#f4f4f4;color:#000;"> <a href="/all-subtopics"><i class="hs-admin-arrow-circle-right"></i></a></span>
+              <span class="btn btn-info g-rounded-50" style="background:#f4f4f4;color:#000;border-color:#f4f4f4;"> <a href="#!"><i class="hs-admin-download"></i></a></span>
+              <span class="btn btn-info g-rounded-50" style="background:#5bc0de;color:#fff !important;margin-left:3px;border-color:#5bc0de;"> <a href="#!"><i class="hs-admin-check-box" style="color:#fff !important;"></i></a></span>
+              <span class="btn btn-info g-rounded-50" style="background:#d9534f;color:#fff !important;margin-left:3px;border-color:#d9534f;"> <a href="#!"><i class="hs-admin-close" style="color:#fff !important;"></i></a></span>
                     </td>
                   </tr>
                 </tbody>

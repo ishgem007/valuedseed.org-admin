@@ -82,7 +82,7 @@
                       </div>
                     </div>
 
-                    <h3 class="g-font-weight-300 g-font-size-20 g-color-black g-mb-15"> Sub Topic Title</h3>
+                    <h3 class="g-font-weight-300 g-font-size-20 g-color-black g-mb-15"> Chapter Title</h3>
                     <span class="u-tags-v1 text-center g-width-130 g-brd-around g-brd-primary g-bg-primary g-color-white g-rounded-50 g-py-4 g-px-15">Declined</span>
                   </header>
 
@@ -91,7 +91,7 @@
                   <div class="card-block d-flex justify-content-between g-px-20 g-px-30--sm g-py-15 g-py-20--sm">
                     <div>
                       <h4 class="g-line-height-1_2 g-font-weight-300 g-font-size-28 g-color-black">25</h4>
-                      <em class="g-font-style-normal g-font-weight-300 g-font-size-16 g-color-gray-dark-v6">Topics</em>
+                      <em class="g-font-style-normal g-font-weight-300 g-font-size-16 g-color-gray-dark-v6">Q/A</em>
                     </div>
 
                     <div>
@@ -108,14 +108,14 @@
 
                   <div class="card-block g-px-20 g-px-30--sm g-py-10 g-py-15--sm">
                     <div class="media align-self-center g-mb-5">
-                      <div class="d-flex g-width-100 g-font-weight-300 g-color-gray-dark-v10">Content Upload</div>
+                      <!-- <div class="d-flex g-width-100 g-font-weight-300 g-color-gray-dark-v10">Content Upload</div> -->
 
                       <div class="media-body align-self-center">
                         <div class="progress g-height-4 g-rounded-2">
                           <div class="progress-bar g-bg-lightblue-v3 g-rounded-2" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                       </div>
-                      <div class="d-flex align-self-center justify-content-end g-font-weight-300 g-color-black g-width-40">16%</div>
+                      <!-- <div class="d-flex align-self-center justify-content-end g-font-weight-300 g-color-black g-width-40">16%</div> -->
                     </div>
                   </div>
 
@@ -133,7 +133,7 @@
                         <p class="g-color-black mb-0">6h
                           <span class="g-hidden-md-down">43min&nbsp;</span>
                           <span class="g-hidden-md-up">.</span>
-                          total length
+                      
                         </p>
                       </div>
                     </div>
@@ -195,7 +195,7 @@
                       </div>
                     </div>
 
-                    <h3 class="g-font-weight-300 g-font-size-20 g-color-black g-mb-15"> Sub Topic Title</h3>
+                    <h3 class="g-font-weight-300 g-font-size-20 g-color-black g-mb-15"> Chapter Title</h3>
                     <span class="u-tags-v1 text-center g-width-130 g-brd-around g-brd-primary g-bg-primary g-color-white g-rounded-50 g-py-4 g-px-15">Declined</span>
                   </header>
 
@@ -204,7 +204,7 @@
                   <div class="card-block d-flex justify-content-between g-px-20 g-px-30--sm g-py-15 g-py-20--sm">
                     <div>
                       <h4 class="g-line-height-1_2 g-font-weight-300 g-font-size-28 g-color-black">25</h4>
-                      <em class="g-font-style-normal g-font-weight-300 g-font-size-16 g-color-gray-dark-v6">Topics</em>
+                      <em class="g-font-style-normal g-font-weight-300 g-font-size-16 g-color-gray-dark-v6">Q/A</em>
                     </div>
 
                     <div>
@@ -219,7 +219,7 @@
                   </div>
                   <hr class="d-flex g-brd-gray-light-v7 g-mx-20 g-mx-30--sm my-0">
 
-                  <div class="card-block g-px-20 g-px-30--sm g-py-10 g-py-15--sm">
+                 <!--  <div class="card-block g-px-20 g-px-30--sm g-py-10 g-py-15--sm">
                     <div class="media align-self-center g-mb-5">
                       <div class="d-flex g-width-100 g-font-weight-300 g-color-gray-dark-v10">Content Upload</div>
 
@@ -230,7 +230,7 @@
                       </div>
                       <div class="d-flex align-self-center justify-content-end g-font-weight-300 g-color-black g-width-40">16%</div>
                     </div>
-                  </div>
+                  </div> -->
 
                   <hr class="d-flex g-brd-gray-light-v7 g-mx-20 g-mx-30--sm my-0">
 
@@ -246,7 +246,7 @@
                         <p class="g-color-black mb-0">6h
                           <span class="g-hidden-md-down">43min&nbsp;</span>
                           <span class="g-hidden-md-up">.</span>
-                          total length
+                      
                         </p>
                       </div>
                     </div>
@@ -309,7 +309,7 @@
                       </div>
                     </div>
 
-                    <h3 class="g-font-weight-300 g-font-size-20 g-color-black g-mb-15"> Sub Topic Title</h3>
+                    <h3 class="g-font-weight-300 g-font-size-20 g-color-black g-mb-15"> Chapter Title</h3>
                     <span class="u-tags-v1 text-center g-width-130 g-brd-around g-brd-primary g-bg-primary g-color-white g-rounded-50 g-py-4 g-px-15">Declined</span>
                   </header>
 
@@ -318,7 +318,7 @@
                   <div class="card-block d-flex justify-content-between g-px-20 g-px-30--sm g-py-15 g-py-20--sm">
                     <div>
                       <h4 class="g-line-height-1_2 g-font-weight-300 g-font-size-28 g-color-black">25</h4>
-                      <em class="g-font-style-normal g-font-weight-300 g-font-size-16 g-color-gray-dark-v6">Topics</em>
+                      <em class="g-font-style-normal g-font-weight-300 g-font-size-16 g-color-gray-dark-v6">Q/A</em>
                     </div>
 
                     <div>
@@ -333,7 +333,7 @@
                   </div>
                   <hr class="d-flex g-brd-gray-light-v7 g-mx-20 g-mx-30--sm my-0">
 
-                  <div class="card-block g-px-20 g-px-30--sm g-py-10 g-py-15--sm">
+                  <!-- <div class="card-block g-px-20 g-px-30--sm g-py-10 g-py-15--sm">
                     <div class="media align-self-center g-mb-5">
                       <div class="d-flex g-width-100 g-font-weight-300 g-color-gray-dark-v10">Content Upload</div>
 
@@ -344,7 +344,7 @@
                       </div>
                       <div class="d-flex align-self-center justify-content-end g-font-weight-300 g-color-black g-width-40">16%</div>
                     </div>
-                  </div>
+                  </div> -->
 
                   <hr class="d-flex g-brd-gray-light-v7 g-mx-20 g-mx-30--sm my-0">
 
@@ -360,7 +360,7 @@
                         <p class="g-color-black mb-0">6h
                           <span class="g-hidden-md-down">43min&nbsp;</span>
                           <span class="g-hidden-md-up">.</span>
-                          total length
+                      
                         </p>
                       </div>
                     </div>
@@ -423,7 +423,7 @@
                       </div>
                     </div>
 
-                    <h3 class="g-font-weight-300 g-font-size-20 g-color-black g-mb-15"> Sub Topic Title</h3>
+                    <h3 class="g-font-weight-300 g-font-size-20 g-color-black g-mb-15"> Chapter Title</h3>
                     <span class="u-tags-v1 text-center g-width-130 g-brd-around g-brd-primary g-bg-primary g-color-white g-rounded-50 g-py-4 g-px-15">Declined</span>
                   </header>
 
@@ -432,7 +432,7 @@
                   <div class="card-block d-flex justify-content-between g-px-20 g-px-30--sm g-py-15 g-py-20--sm">
                     <div>
                       <h4 class="g-line-height-1_2 g-font-weight-300 g-font-size-28 g-color-black">25</h4>
-                      <em class="g-font-style-normal g-font-weight-300 g-font-size-16 g-color-gray-dark-v6">Topics</em>
+                      <em class="g-font-style-normal g-font-weight-300 g-font-size-16 g-color-gray-dark-v6">Q/A</em>
                     </div>
 
                     <div>
@@ -447,7 +447,7 @@
                   </div>
                   <hr class="d-flex g-brd-gray-light-v7 g-mx-20 g-mx-30--sm my-0">
 
-                  <div class="card-block g-px-20 g-px-30--sm g-py-10 g-py-15--sm">
+                  <!-- <div class="card-block g-px-20 g-px-30--sm g-py-10 g-py-15--sm">
                     <div class="media align-self-center g-mb-5">
                       <div class="d-flex g-width-100 g-font-weight-300 g-color-gray-dark-v10">Content Upload</div>
 
@@ -458,7 +458,7 @@
                       </div>
                       <div class="d-flex align-self-center justify-content-end g-font-weight-300 g-color-black g-width-40">16%</div>
                     </div>
-                  </div>
+                  </div> -->
 
                   <hr class="d-flex g-brd-gray-light-v7 g-mx-20 g-mx-30--sm my-0">
 
@@ -474,7 +474,7 @@
                         <p class="g-color-black mb-0">6h
                           <span class="g-hidden-md-down">43min&nbsp;</span>
                           <span class="g-hidden-md-up">.</span>
-                          total length
+                      
                         </p>
                       </div>
                     </div>
@@ -537,7 +537,7 @@
                       </div>
                     </div>
 
-                    <h3 class="g-font-weight-300 g-font-size-20 g-color-black g-mb-15"> Sub Topic Title</h3>
+                    <h3 class="g-font-weight-300 g-font-size-20 g-color-black g-mb-15"> Chapter Title</h3>
                     <span class="u-tags-v1 text-center g-width-130 g-brd-around g-brd-primary g-bg-primary g-color-white g-rounded-50 g-py-4 g-px-15">Declined</span>
                   </header>
 
@@ -546,7 +546,7 @@
                   <div class="card-block d-flex justify-content-between g-px-20 g-px-30--sm g-py-15 g-py-20--sm">
                     <div>
                       <h4 class="g-line-height-1_2 g-font-weight-300 g-font-size-28 g-color-black">25</h4>
-                      <em class="g-font-style-normal g-font-weight-300 g-font-size-16 g-color-gray-dark-v6">Topics</em>
+                      <em class="g-font-style-normal g-font-weight-300 g-font-size-16 g-color-gray-dark-v6">Q/A</em>
                     </div>
 
                     <div>
@@ -561,7 +561,7 @@
                   </div>
                   <hr class="d-flex g-brd-gray-light-v7 g-mx-20 g-mx-30--sm my-0">
 
-                  <div class="card-block g-px-20 g-px-30--sm g-py-10 g-py-15--sm">
+                  <!-- <div class="card-block g-px-20 g-px-30--sm g-py-10 g-py-15--sm">
                     <div class="media align-self-center g-mb-5">
                       <div class="d-flex g-width-100 g-font-weight-300 g-color-gray-dark-v10">Content Upload</div>
 
@@ -572,7 +572,7 @@
                       </div>
                       <div class="d-flex align-self-center justify-content-end g-font-weight-300 g-color-black g-width-40">16%</div>
                     </div>
-                  </div>
+                  </div> -->
 
                   <hr class="d-flex g-brd-gray-light-v7 g-mx-20 g-mx-30--sm my-0">
 
@@ -588,7 +588,7 @@
                         <p class="g-color-black mb-0">6h
                           <span class="g-hidden-md-down">43min&nbsp;</span>
                           <span class="g-hidden-md-up">.</span>
-                          total length
+                      
                         </p>
                       </div>
                     </div>
@@ -650,7 +650,7 @@
                       </div>
                     </div>
 
-                    <h3 class="g-font-weight-300 g-font-size-20 g-color-black g-mb-15"> Sub Topic Title</h3>
+                    <h3 class="g-font-weight-300 g-font-size-20 g-color-black g-mb-15"> Chapter Title</h3>
                     <span class="u-tags-v1 text-center g-width-130 g-brd-around g-brd-primary g-bg-primary g-color-white g-rounded-50 g-py-4 g-px-15">Declined</span>
                   </header>
 
@@ -659,7 +659,7 @@
                   <div class="card-block d-flex justify-content-between g-px-20 g-px-30--sm g-py-15 g-py-20--sm">
                     <div>
                       <h4 class="g-line-height-1_2 g-font-weight-300 g-font-size-28 g-color-black">25</h4>
-                      <em class="g-font-style-normal g-font-weight-300 g-font-size-16 g-color-gray-dark-v6">Topics</em>
+                      <em class="g-font-style-normal g-font-weight-300 g-font-size-16 g-color-gray-dark-v6">Q/A</em>
                     </div>
 
                     <div>
@@ -674,7 +674,7 @@
                   </div>
                   <hr class="d-flex g-brd-gray-light-v7 g-mx-20 g-mx-30--sm my-0">
 
-                  <div class="card-block g-px-20 g-px-30--sm g-py-10 g-py-15--sm">
+                  <!-- <div class="card-block g-px-20 g-px-30--sm g-py-10 g-py-15--sm">
                     <div class="media align-self-center g-mb-5">
                       <div class="d-flex g-width-100 g-font-weight-300 g-color-gray-dark-v10">Content Upload</div>
 
@@ -685,7 +685,7 @@
                       </div>
                       <div class="d-flex align-self-center justify-content-end g-font-weight-300 g-color-black g-width-40">16%</div>
                     </div>
-                  </div>
+                  </div> -->
 
                   <hr class="d-flex g-brd-gray-light-v7 g-mx-20 g-mx-30--sm my-0">
 
@@ -701,7 +701,7 @@
                         <p class="g-color-black mb-0">6h
                           <span class="g-hidden-md-down">43min&nbsp;</span>
                           <span class="g-hidden-md-up">.</span>
-                          total length
+                      
                         </p>
                       </div>
                     </div>
@@ -753,24 +753,6 @@
                               </li>
                               <li>
                                 <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
-                                  <i class="hs-admin-archive g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
-                                  Archive
-                                </a>
-                              </li>
-                              <li>
-                                <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
-                                  <i class="hs-admin-check g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
-                                  Mark as Done
-                                </a>
-                              </li>
-                              <li>
-                                <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
-                                  <i class="hs-admin-plus g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
-                                  New Task
-                                </a>
-                              </li>
-                              <li>
-                                <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
                                   <i class="hs-admin-trash g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
                                   Delete
                                 </a>
@@ -781,7 +763,7 @@
                       </div>
                     </div>
 
-                    <h3 class="g-font-weight-300 g-font-size-20 g-color-black g-mb-15"> Sub Topic Title</h3>
+                    <h3 class="g-font-weight-300 g-font-size-20 g-color-black g-mb-15"> Chapter Title</h3>
                     <span class="u-tags-v1 text-center g-width-130 g-brd-around g-brd-primary g-bg-primary g-color-white g-rounded-50 g-py-4 g-px-15">Declined</span>
                   </header>
 
@@ -790,7 +772,7 @@
                   <div class="card-block d-flex justify-content-between g-px-20 g-px-30--sm g-py-15 g-py-20--sm">
                     <div>
                       <h4 class="g-line-height-1_2 g-font-weight-300 g-font-size-28 g-color-black">25</h4>
-                      <em class="g-font-style-normal g-font-weight-300 g-font-size-16 g-color-gray-dark-v6">Topics</em>
+                      <em class="g-font-style-normal g-font-weight-300 g-font-size-16 g-color-gray-dark-v6">Q/A</em>
                     </div>
 
                     <div>
@@ -805,7 +787,7 @@
                   </div>
                   <hr class="d-flex g-brd-gray-light-v7 g-mx-20 g-mx-30--sm my-0">
 
-                  <div class="card-block g-px-20 g-px-30--sm g-py-10 g-py-15--sm">
+                  <!-- <div class="card-block g-px-20 g-px-30--sm g-py-10 g-py-15--sm">
                     <div class="media align-self-center g-mb-5">
                       <div class="d-flex g-width-100 g-font-weight-300 g-color-gray-dark-v10">Content Upload</div>
 
@@ -817,7 +799,7 @@
                       <div class="d-flex align-self-center justify-content-end g-font-weight-300 g-color-black g-width-40">16%</div>
                     </div>
                   </div>
-
+ -->
                   <hr class="d-flex g-brd-gray-light-v7 g-mx-20 g-mx-30--sm my-0">
 
                   <div class="card-block g-px-20 g-px-30--sm g-py-15 g-py-20--sm">
@@ -832,7 +814,7 @@
                         <p class="g-color-black mb-0">6h
                           <span class="g-hidden-md-down">43min&nbsp;</span>
                           <span class="g-hidden-md-up">.</span>
-                          total length
+                      
                         </p>
                       </div>
                     </div>
@@ -868,7 +850,7 @@
                   <span class="d-inline-block g-pos-rel g-width-50 g-height-50 g-font-size-default g-color-secondary g-brd-around g-brd-secondary rounded-circle g-mb-5">
                     <i class="hs-admin-plus g-absolute-centered"></i>
                   </span>
-                  <span class="d-block g-font-weight-300 g-font-size-16 g-color-gray-dark-v6 g-color-secondary--parent-hover">Start New Project</span>
+                  <span class="d-block g-font-weight-300 g-font-size-16 g-color-gray-dark-v6 g-color-secondary--parent-hover">Create New Chapter</span>
                   </span>
                 </a>
               </div> 
