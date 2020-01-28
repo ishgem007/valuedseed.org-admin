@@ -7,8 +7,9 @@
           <div class="card g-brd-gray-light-v7 g-pa-15 g-pa-25-30--md g-mb-30">
                 <section class="g-mb-20">
                   <h3 class="text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mb-20">About me</h3>
-                  <p class="g-font-weight-300 g-color-gray-dark-v6 mb-0">A Pocket PC is a handheld computer, which features many of the same capabilities as a modern PC. These handy little devices allow individuals to retrieve and store e-mail messages, create a contact file, appointments, surf the internet,
-                    exchange text messages and more. Every product that is labeled as a Pocket PC must be accompanied with specific software to operate the unit and must feature a touchscreen.</p>
+                  <p class="g-font-weight-300 g-color-gray-dark-v6 mb-0">
+                    {{userData.biography}}
+                  </p>
                 </section>
               </div>
         </div>
@@ -22,15 +23,15 @@
                           <ul class="list-unstyled g-color-gray-dark-v12 g-min-height-50 g-px-10 g-mb-5">
                             <li class="mb-0">
                               <i class="hs-admin-check g-color-secondary g-mr-14"></i>
-                              First Name: Charlie
+                              First Name: {{userData.fn}}
                             </li>
                             <li class="mb-0">
                               <i class="hs-admin-check g-color-secondary g-mr-14"></i>
-                              Last Name: Bailey
+                              Last Name: {{userData.ln}}
                             </li>
                             <li class="mb-0">
                               <i class="hs-admin-check g-color-secondary g-mr-14"></i>
-                              Gender: Male
+                              Gender: {{userData.gender}}
                             </li>
                             <li class="mb-0">
                               <i class="hs-admin-check g-color-secondary g-mr-14"></i>
@@ -60,6 +61,11 @@ export default {
   name: "AboutComponent",
   components: {
     SidebarProfile
+  },
+  computed:{
+    userData(){
+      return this.$store.getters.getUserData
+    }
   },
   mounted() {
       

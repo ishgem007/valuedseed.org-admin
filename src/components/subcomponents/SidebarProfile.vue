@@ -115,6 +115,16 @@
 </template>
 <script>
 export default {
-    name:"SidebarProfile"
+    name:"SidebarProfile",
+    methods:{
+      hitActionProfilePicture(){
+        this.$store.dispatch('fetchProfilePicture')
+      }
+    },
+    mounted(){
+      if(this.$store.state.profilePicture == null){
+          this.hitActionProfilePicture();
+      }
+    }
 }
 </script>

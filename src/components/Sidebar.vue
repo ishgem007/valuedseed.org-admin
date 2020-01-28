@@ -16,7 +16,7 @@
               
             <!-- Profile -->
             
-            <li class="u-sidebar-navigation-v1-menu-item u-side-nav--has-sub-menu u-side-nav--top-level-menu-item u-side-nav-opened">
+            <li class="u-sidebar-navigation-v1-menu-item u-side-nav--has-sub-menu u-side-nav--top-level-menu-item u-side-nav-opened" >
                     <a class="media u-side-nav--top-level-menu-link u-side-nav--hide-on-hidden g-px-15 g-py-12" href="#" data-hssm-target="#subMenu1">
                       <span class="d-flex align-self-center g-pos-rel g-font-size-18 g-mr-18">
               <i class="hs-admin-user"></i>
@@ -58,8 +58,8 @@
                         <!-- End Photo -->
                 
                 <!-- Payment Details -->
-                
-                <li class="u-sidebar-navigation-v1-menu-item u-side-nav--second-level-menu-item">
+                <!-- this.$store.state.auth.role === 'teacher' -->
+                <li class="u-sidebar-navigation-v1-menu-item u-side-nav--second-level-menu-item" v-if="">
                           <a class="media u-side-nav--second-level-menu-link g-px-15 g-py-12" href="/payment-methods">
                             <span class="d-flex align-self-center g-mr-15 g-mt-minus-1">
                   <i class="hs-admin-wallet"></i>
@@ -70,8 +70,8 @@
               </ul>
               <!-- End Dashboards: Submenu-1 -->
             </li>
-
-             <li class="u-sidebar-navigation-v1-menu-item u-side-nav--has-sub-menu u-side-nav--top-level-menu-item">
+              <!-- this.$store.state.auth.role === 'admin' -->
+             <li class="u-sidebar-navigation-v1-menu-item u-side-nav--has-sub-menu u-side-nav--top-level-menu-item" v-if="">
               <a class="media u-side-nav--top-level-menu-link u-side-nav--hide-on-hidden g-px-15 g-py-12" href="#" data-hssm-target="#subMenu1">
                 <span class="d-flex align-self-center g-pos-rel g-font-size-18 g-mr-18">
                   <i class="hs-admin-user"></i>
@@ -111,7 +111,8 @@
             </li>
       
               <!-- End Profile -->
-              <li class="u-sidebar-navigation-v1-menu-item u-side-nav--top-level-menu-item">
+              <!-- this.$store.state.auth.role === 'admin' -->
+              <li class="u-sidebar-navigation-v1-menu-item u-side-nav--top-level-menu-item" v-if="">
                     <a class="media u-side-nav--top-level-menu-link u-side-nav--hide-on-hidden g-px-15 g-py-12" href="/all-teachers">
                       <span class="d-flex align-self-center g-pos-rel g-font-size-18 g-mr-18">
                 <i class="hs-admin-user"></i>
@@ -120,7 +121,8 @@
                           </a>
                 </li>
               <!-- Projects -->
-                  <li class="u-sidebar-navigation-v1-menu-item u-side-nav--top-level-menu-item">
+              <!-- this.$store.state.auth.role === 'teacher' -->
+                  <li class="u-sidebar-navigation-v1-menu-item u-side-nav--top-level-menu-item" v-if="">
                     <a class="media u-side-nav--top-level-menu-link u-side-nav--hide-on-hidden g-px-15 g-py-12" href="/all-projects">
                       <span class="d-flex align-self-center g-pos-rel g-font-size-18 g-mr-18">
                 <i class="hs-admin-notepad"></i>
@@ -128,8 +130,8 @@
                       <span class="media-body align-self-center">Subject and Chapters</span>
                     </a>
                   </li>
-
-                  <li class="u-sidebar-navigation-v1-menu-item u-side-nav--top-level-menu-item">
+<!-- this.$store.state.auth.role === 'admin' -->
+                  <li class="u-sidebar-navigation-v1-menu-item u-side-nav--top-level-menu-item" v-if="">
                     <a class="media u-side-nav--top-level-menu-link u-side-nav--hide-on-hidden g-px-15 g-py-12" href="/subjects-and-teacher">
                       <span class="d-flex align-self-center g-pos-rel g-font-size-18 g-mr-18">
                 <i class="hs-admin-notepad"></i>
@@ -150,7 +152,8 @@
             </li> -->
             <!-- End Metrics -->
               <!-- manage subject -->
-            <li class="u-sidebar-navigation-v1-menu-item u-side-nav--has-sub-menu u-side-nav--top-level-menu-item u-side-nav-opened">
+              <!-- this.$store.state.auth.role === 'admin' -->
+            <li class="u-sidebar-navigation-v1-menu-item u-side-nav--has-sub-menu u-side-nav--top-level-menu-item u-side-nav-opened" v-if="">
                     <a class="media u-side-nav--top-level-menu-link u-side-nav--hide-on-hidden g-px-15 g-py-12" href="#!" data-hssm-target="#subMenu3">
                       <span class="d-flex align-self-center g-pos-rel g-font-size-18 g-mr-18">
               <i class="hs-admin-pencil-alt"></i>
@@ -200,7 +203,8 @@
               <!-- End Dashboards: Submenu-1 -->
             </li>
             <!-- manage products-->
-            <li class="u-sidebar-navigation-v1-menu-item u-side-nav--has-sub-menu u-side-nav--top-level-menu-item u-side-nav-opened">
+            <!-- this.$store.state.auth.role === 'admin' -->
+            <li class="u-sidebar-navigation-v1-menu-item u-side-nav--has-sub-menu u-side-nav--top-level-menu-item u-side-nav-opened" v-if="">
                     <a class="media u-side-nav--top-level-menu-link u-side-nav--hide-on-hidden g-px-15 g-py-12" href="#!" data-hssm-target="#subMenu4">
                       <span class="d-flex align-self-center g-pos-rel g-font-size-18 g-mr-18">
               <i class="hs-admin-view-list"></i>
@@ -241,8 +245,8 @@
               </ul>
               <!-- End Dashboards: Submenu-1 -->
             </li>
-
-              <li class="u-sidebar-navigation-v1-menu-item u-side-nav--has-sub-menu u-side-nav--top-level-menu-item u-side-nav-opened">
+            <!-- this.$store.state.auth.role === 'admin' -->
+              <li class="u-sidebar-navigation-v1-menu-item u-side-nav--has-sub-menu u-side-nav--top-level-menu-item u-side-nav-opened" v-if="">
               <a class="media u-side-nav--top-level-menu-link u-side-nav--hide-on-hidden g-px-15 g-py-12" href="#" data-hssm-target="#subMenu1">
                 <span class="d-flex align-self-center g-pos-rel g-font-size-18 g-mr-18">
                   <i class="hs-admin-bell"></i>
@@ -320,6 +324,9 @@
 </template>
 <script>
 export default {
-    name:"Sidebar"
+    name:"Sidebar",
+    mounted(){
+        //alert(this.$store.state.auth.token);
+    }
 }
 </script>

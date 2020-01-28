@@ -7,9 +7,11 @@
         <div class="col g-ml-45 g-ml-0--lg g-pb-65--md">
           <div class="g-bg-lightblue-v10-opacity-0_5 g-pa-20">
               <!-- Panel score Card -->
-              <Panel />
+              <!-- <Panel v-if="this.$store.state.auth.role === 'teacher'"/> -->
+              <Panel v-if=""/>
 
-               <AdminPanel />
+               <!-- <AdminPanel v-if="this.$store.state.auth.role === 'admin'"/> -->
+               <AdminPanel v-if=""/>
                 <!-- End Profile Sidebar Nav -->
                 <!-- Other Profile Info -->
               <Projects />

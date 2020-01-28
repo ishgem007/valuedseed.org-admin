@@ -17,9 +17,11 @@
 
             <hr class="d-flex g-brd-gray-light-v7 g-my-15 g-my-25--md" />
 
-            <form>
+            <form @submit.preventDefault="onSubmit">
+            <!--   js-file-attachment -->
               <div class="form-group">
-                <input class="js-file-attachment" type="file" name="fileAttachment[]" />
+                <input class="" type="file" name="" @change="onFileChanged" />
+                <button @click="onUpload" type="button">Upload</button>
               </div>
             </form>
           </div>
@@ -34,8 +36,36 @@
 import SidebarProfile from "./subcomponents/SidebarProfile";
 export default {
   name: "ProfilePhoto",
+  data() {
+    return {
+      selectedFile: null
+    }
+  },
   components: {
     SidebarProfile
+  },
+  methods:{
+    onFileChanged (event) {
+      this.selectedFile = event.target.files[0]
+    },
+    onUpload() {
+      const uid = this.$store.state.auth.id;
+      const formData = new FormData()
+      formData.append('image_path', 'this.selectedFile, this.selectedFile.name')
+      formData.append('image_path', this.selectedFile);
+      const auth = 'Bearer '+ this.$token;
+      this.$http.post('http://valuedseed.org/api/users/'+uid+'/upload', formData,{
+        "headers":{
+                'Authorization': auth,
+                'Content-Type': 'multipart/form-data'
+        } 
+      })
+      .then(response =>{
+        console.log(response.data.message)
+      }).catch(error => {
+        console.log(error)
+      })
+    }
   },
   mounted() {
       

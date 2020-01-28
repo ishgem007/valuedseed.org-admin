@@ -35,75 +35,6 @@
 
                     <hr class="d-flex g-brd-gray-light-v7 g-my-15 g-my-25--md">
 
-                    <!-- <div class="row">
-                      <div class="col-md-6 g-mb-20">
-                        <label class="g-mb-10" for="#dateFrom">From</label>
-
-                        <div class="form-group mb-0">
-                          <div class="form-group mb-0">
-                            <div id="dateFromWrapper" class="u-datepicker-right u-datepicker--v3 g-pos-rel w-100 g-cursor-pointer g-brd-around g-brd-gray-light-v7 g-rounded-4">
-                              <input id="dateFrom" class="form-control form-control-md g-bg-white g-brd-gray-light-v7 g-brd-lightblue-v3--focus g-rounded-4 g-px-20 g-py-12" type="text" data-rp-wrapper="#dateFromWrapper" data-rp-date-format="d M Y">
-                              <span class="g-pos-abs g-top-0 g-right-0 g-z-index-2 g-width-40 h-100 g-font-size-18 g-color-gray-light-v6 rounded-0">
-                              <i class="hs-admin-calendar g-absolute-centered"></i>
-                            </span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="col-md-6 g-mb-20">
-                        <label class="g-mb-10" for="#dateTo">To</label>
-
-                        <div class="form-group mb-0">
-                          <div id="dateToWrapper" class="u-datepicker-right u-datepicker--v3 w-100 g-pos-rel g-cursor-pointer g-brd-around g-brd-gray-light-v7 g-rounded-4">
-                            <input id="dateTo" class="form-control form-control-md g-bg-white g-brd-gray-light-v7 g-brd-lightblue-v3--focus g-rounded-4 g-px-20 g-py-12" type="text" data-rp-wrapper="#dateToWrapper" data-rp-date-format="d M Y">
-                            <span class="g-pos-abs g-top-0 g-right-0 g-z-index-2 g-width-40 h-100 g-font-size-18 g-color-gray-light-v6 rounded-0">
-                            <i class="hs-admin-calendar g-absolute-centered"></i>
-                          </span>
-                          </div>
-                        </div>
-                      </div>
-                    </div> -->
-
-                    <!-- <div class="row">
-                      <div class="col-md-6 g-mb-20">
-                        <label class="g-mb-10" for="#company">Company</label>
-
-                        <div class="form-group mb-0">
-                          <input id="company" class="form-control form-control-md g-brd-gray-light-v7 g-brd-lightblue-v3--focus g-rounded-4 g-px-20 g-py-12" type="text">
-                        </div>
-                      </div>
-
-                      <div class="col-md-6 g-mb-20">
-                        <label class="g-mb-10" for="#position">Position</label>
-
-                        <div class="form-group mb-0">
-                          <input id="position" class="form-control form-control-md g-brd-gray-light-v7 g-brd-lightblue-v3--focus g-rounded-4 g-px-20 g-py-12" type="text">
-                        </div>
-                      </div>
-                    </div> -->
-
-                    <!-- <div class="g-mb-30">
-                      <label class="g-mb-10" for="#expirience">Your Experience</label>
-
-                      <div class="form-group mb-0">
-                        <textarea id="expirience" class="form-control form-control-md g-brd-gray-light-v7 g-brd-lightblue-v3--focus g-rounded-4 g-px-20 g-py-12" rows="4"></textarea>
-                      </div>
-                    </div> -->
-
-                    <!-- <div class="d-flex g-mb-40">
-                      <a class="u-link-v5 d-flex align-items-center g-color-secondary" href="#!">
-                        <i class="hs-admin-check g-font-size-16"></i>
-                        <span class="g-ml-8">Save</span>
-                      </a>
-
-                      <a class="u-link-v5 d-flex align-items-center g-color-secondary g-ml-30" href="#!">
-                        <span class="u-badge-v2--xl g-pos-rel g-transform-origin--top-left g-bg-lightblue-v3 g-font-size-10 g-color-white">
-                        <i class="hs-admin-plus g-absolute-centered"></i>
-                      </span>
-                        <span class="g-ml-15">Add More</span>
-                      </a>
-                    </div> -->
 
                     <div class="g-mb-30">
                       <header class="row">
@@ -246,15 +177,22 @@ export default {
     methods:{
         toggle:function(){
             this.show = !this.show;
-          }
+          },
+
     },
     computed:{
-      iconToShow(){
-        return this.show ? 'hs-admin-minus' : 'hs-admin-plus'
-      },
-      msgToShow(){
-        return this.show ? 'Close' : 'Add More'
-      }
+        iconToShow(){
+          return this.show ? 'hs-admin-minus' : 'hs-admin-plus'
+        },
+        msgToShow(){
+          return this.show ? 'Close' : 'Add More'
+        },
+        userData(){
+        return this.$store.getters('getUserData')
+        }
+    },
+    mounted(){
+      //console.log(userData());
     }
 };
 </script>
