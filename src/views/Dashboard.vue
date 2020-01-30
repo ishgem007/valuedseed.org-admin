@@ -6,16 +6,9 @@
         <Sidebar />
         <div class="col g-ml-45 g-ml-0--lg g-pb-65--md">
           <div class="g-bg-lightblue-v10-opacity-0_5 g-pa-20">
-              <!-- Panel score Card -->
-              <!-- <Panel v-if="this.$store.state.auth.role === 'teacher'"/> -->
-              <Panel v-if=""/>
-
-               <!-- <AdminPanel v-if="this.$store.state.auth.role === 'admin'"/> -->
-               <AdminPanel v-if=""/>
-                <!-- End Profile Sidebar Nav -->
-                <!-- Other Profile Info -->
+              <Panel v-if="this.$store.state.auth.role === 'teacher'"/>
+               <AdminPanel v-if="this.$store.state.auth.role === 'admin'"/>
               <Projects />
-                <!-- End Other Profile Info -->
           </div>
           <Footer />
         </div>
@@ -41,6 +34,11 @@ import EditModal from '../components/EditModal.vue'
 // let $ = JQuery
 export default {
   name:'Dashboard',
+  data(){
+    return{
+      
+    }
+  },
   components:{
     Header,
     Sidebar,
@@ -50,12 +48,7 @@ export default {
     NewChapter,
     AdminPanel,
     EditModal
-  },
-  mounted() {
-     
-  },
-  destroyed(){
-     
   }
+  
 }
 </script>

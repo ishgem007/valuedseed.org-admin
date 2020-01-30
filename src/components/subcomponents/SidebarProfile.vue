@@ -18,8 +18,9 @@
                 </a>
                 <img
                   class="img-fluid rounded-circle"
-                  src="assets/assets/img-temp/130x130/img1.jpg"
+                  :src="profileImage"
                   alt="Image description"
+                  width="130" height="130"
                 />
               </div>
 
@@ -116,15 +117,35 @@
 <script>
 export default {
     name:"SidebarProfile",
-    methods:{
-      hitActionProfilePicture(){
-        this.$store.dispatch('fetchProfilePicture')
+    data(){
+      return{
+        ptoggle:0,
+        profileImage:'assets/assets/img-temp/130x130/img1.jpg'
       }
     },
+    methods:{
+        getProfileImage(pid,token){
+          if(this.ptoggle === 0){
+            const auth = 'Bearer '+ token;
+            this.$http({ 
+                  'method': 'GET',
+                  'url': 'http://valuedseed.org/api/users/'+pid+'/images',
+                  "headers":{
+                    'Authorization': auth
+                  } 
+                }).then(response => {
+                  this.ptoggle = 1;
+                this.profileImage = response.data.data[0].url;
+                console.log(this.ptoggle);
+            }).catch(error=>{
+              console.log(error);
+            })
+        }
+	  	}
+    },
     mounted(){
-      if(this.$store.state.profilePicture == null){
-          this.hitActionProfilePicture();
-      }
+      
+      this.getProfileImage(this.$store.state.auth.id,this.$store.state.auth.token);
     }
 }
 </script>

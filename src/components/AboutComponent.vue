@@ -8,7 +8,7 @@
                 <section class="g-mb-20">
                   <h3 class="text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mb-20">About me</h3>
                   <p class="g-font-weight-300 g-color-gray-dark-v6 mb-0">
-                    {{userData.biography}}
+                    {{ profileInfo.biography }}
                   </p>
                 </section>
               </div>
@@ -23,15 +23,15 @@
                           <ul class="list-unstyled g-color-gray-dark-v12 g-min-height-50 g-px-10 g-mb-5">
                             <li class="mb-0">
                               <i class="hs-admin-check g-color-secondary g-mr-14"></i>
-                              First Name: {{userData.fn}}
+                              First Name: {{ profileInfo.first_name }}
                             </li>
                             <li class="mb-0">
                               <i class="hs-admin-check g-color-secondary g-mr-14"></i>
-                              Last Name: {{userData.ln}}
+                              Last Name: {{ profileInfo.last_name }}
                             </li>
                             <li class="mb-0">
                               <i class="hs-admin-check g-color-secondary g-mr-14"></i>
-                              Gender: {{userData.gender}}
+                              Gender: {{ profileInfo.gender == 'f' ? 'female' : 'male' }}
                             </li>
                             <li class="mb-0">
                               <i class="hs-admin-check g-color-secondary g-mr-14"></i>
@@ -59,8 +59,30 @@
 import SidebarProfile from "./subcomponents/SidebarProfile";
 export default {
   name: "AboutComponent",
+  data(){
+    return {
+      profileInfo: null
+    }
+  },
   components: {
     SidebarProfile
+  },
+  methods:{
+    getProfile(id,token){
+	  		const auth = 'Bearer '+ token;
+	  		this.$http({ 
+		          method: 'GET',
+		          'url': 'http://valuedseed.org/api/teachers/'+id+'/profile',
+		          "headers":{
+		            'Authorization': auth
+		          } 
+		        }).then(response => {
+	  			// console.log(response);
+	  			this.profileInfo = response.data[0]
+	  		}).catch(error=>{
+	  			console.log(error);
+	  		})
+	  	}
   },
   computed:{
     userData(){
@@ -68,7 +90,9 @@ export default {
     }
   },
   mounted() {
-      
+      if(this.profileInfo == null){
+        this.getProfile(this.$store.state.auth.id,this.$store.state.auth.token)
+      }
     }
 };
 </script>

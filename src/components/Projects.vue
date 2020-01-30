@@ -74,8 +74,8 @@
               </div>
             </div>
 
-            <div class="row">
-              <div class="col-md-6 col-lg-4 g-mb-30" v-for="(topic,index) in this.$store.state.topics" :key="index">
+            <div class="row" v-if="topics !== null">
+              <div class="col-md-6 col-lg-4 g-mb-30" v-for="(topic,index) in topics" :key="index">
                 <div class="card h-100 g-brd-gray-light-v7 rounded" >
                   <header class="card-header g-bg-transparent g-brd-bottom-none g-pa-20 g-pa-30--sm">
                     <div class="media g-mb-15">
@@ -111,23 +111,23 @@
                     <span class="u-tags-v1 text-center g-width-130 g-brd-around g-brd-lightblue-v3 g-bg-lightblue-v3 g-color-white g-rounded-50 g-py-4 g-px-15" v-if="topic.active">In Progress</span>
                   </header>
                     <span class="u-tags-v1 text-center g-width-130 g-brd-around g-brd-primary g-bg-primary g-color-white g-rounded-50 g-py-4 g-px-15" v-if="!topic.active">Decline</span>
-                  </header>
+                  <!-- </header> -->
 
                   <hr class="d-flex g-brd-gray-light-v7 g-mx-20 g-mx-30--sm my-0">
 
                   <div class="card-block d-flex justify-content-between g-px-20 g-px-30--sm g-py-15 g-py-20--sm">
                     <div>
-                      <h4 class="g-line-height-1_2 g-font-weight-300 g-font-size-28 g-color-black">25</h4>
+                      <h4 class="g-line-height-1_2 g-font-weight-300 g-font-size-28 g-color-black">{{topic.number_of_qa}}</h4>
                       <em class="g-font-style-normal g-font-weight-300 g-font-size-16 g-color-gray-dark-v6">Q/A</em>
                     </div>
 
                     <div>
-                      <h4 class="g-line-height-1_2 g-font-weight-300 g-font-size-28 g-color-black">23</h4>
+                      <h4 class="g-line-height-1_2 g-font-weight-300 g-font-size-28 g-color-black">{{topic.number_of_videos}}</h4>
                       <em class="g-font-style-normal g-font-weight-300 g-font-size-16 g-color-gray-dark-v6">Videos</em>
                     </div>
 
                     <div>
-                      <h4 class="g-line-height-1_2 g-font-weight-300 g-font-size-28 g-color-black">7</h4>
+                      <h4 class="g-line-height-1_2 g-font-weight-300 g-font-size-28 g-color-black">{{topic.number_of_quiz}}</h4>
                       <em class="g-font-style-normal g-font-weight-300 g-font-size-16 g-color-gray-dark-v6">Quiz</em>
                     </div>
                   </div>
@@ -169,22 +169,6 @@
                       <p class="g-color-black mb-0">New design uploaded by Adam</p>
                     </div> -->
 
-                    <!-- <ul class="list-inline mb-0">
-                      <li class="list-inline-item g-mb-10 g-mb-0--sm">
-                        <img class="g-width-40 g-height-40 rounded-circle" src="assets/b-assets/img-temp/100x100/img14.jpg" alt="Image Description">
-                      </li>
-                      <li class="list-inline-item g-mb-10 g-mb-0--sm">
-                        <img class="g-width-40 g-height-40 rounded-circle" src="assets/b-assets/img-temp/100x100/img17.jpg" alt="Image Description">
-                      </li>
-                      <li class="list-inline-item g-mb-10 g-mb-0--sm">
-                        <div class="d-flex align-items-center justify-content-center g-width-40 g-height-40 g-bg-secondary g-color-white rounded-circle g-pos-rel g-top-1">+4</div>
-                      </li>
-                      <li class="list-inline-item g-mb-10 g-mb-0--sm">
-                        <a class="d-flex align-items-center justify-content-center u-link-v5 g-width-40 g-height-40 g-bg-gray-light-v8 g-bg-primary--hover g-color-secondary g-color-white--hover rounded-circle g-pos-rel g-top-1" href="#!">
-                          <i class="hs-admin-plus"></i>
-                        </a>
-                      </li>
-                    </ul> -->
                   </div>
                 </div>
               </div>     
@@ -207,3 +191,37 @@
             <!-- End Projects Card -->
         </div>
 </template>
+<script>
+export default {
+  data(){
+    return{
+      topics:null
+    }
+  },
+  methods:{
+    getTopics(pid,token){
+	  		const auth = 'Bearer '+ token;
+	  		this.$http({ 
+		          'method': 'GET',
+		          'url': 'http://valuedseed.org/api/products/'+pid+'/topics',
+		          "headers":{
+		            'Authorization': auth
+		          } 
+		        }).then(response => {
+            this.topics = response.data;
+	  			console.log(response.data);
+	  		}).catch(error=>{
+	  			console.log(error);
+	  		})
+	  	}
+  },
+  mounted() {
+    if(this.topics == null){
+      this.getTopics(this.$store.state.product.id,this.$store.state.auth.token);
+    }
+  },
+  destroyed(){
+     
+  }
+}
+</script>

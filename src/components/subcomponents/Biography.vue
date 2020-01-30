@@ -1,6 +1,6 @@
 <template>
     <div class="col-md-9">
-                <div class="h-100 g-brd-around g-brd-gray-light-v7 g-rounded-4 g-pa-15 g-pa-30--md">
+                <div class="h-100 g-brd-around g-brd-gray-light-v7 g-rounded-4 g-pa-15 g-pa-30--md" v-for="(exp,index) in profileInfo.experiences" :key="index">
                   <header>
                     <h2 class="text-uppercase g-font-size-12 g-font-size-default--md g-color-black mb-0">Biography</h2>
                   </header>
@@ -12,7 +12,7 @@
                       <label class="g-mb-10" for="#bio">Your Bio</label>
 
                       <div class="form-group mb-0">
-                        <textarea id="bio" class="form-control form-control-md g-brd-gray-light-v7 g-brd-lightblue-v3--focus g-rounded-4 g-px-20 g-py-12" rows="5" v-model="data"></textarea>
+                        <textarea id="bio" class="form-control form-control-md g-brd-gray-light-v7 g-brd-lightblue-v3--focus g-rounded-4 g-px-20 g-py-12" rows="5" v-model="profileInfo.biography"></textarea>
                       </div>
                     </div>
                     <div class="d-flex g-mb-40" v-if="data.length > 0">
@@ -21,13 +21,6 @@
                         <span class="g-ml-8">Save</span>
                       </a>
                     </div>
-                    <!-- <div class="g-mb-60">
-                      <label class="g-mb-10" for="#skills">Your Skills</label>
-
-                      <div class="u-tagsinput--v2--blue g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--focus g-rounded-4 g-px-6 g-py-5">
-                        <input type="text" value="Developement, Software, Html, Css" data-role="tagsinput">
-                      </div>
-                    </div> -->
 
                     <header>
                       <h2 class="text-uppercase g-font-size-12 g-font-size-default--md g-color-black mb-0">Experience</h2>
@@ -40,7 +33,7 @@
                       <header class="row">
                         <div class="col-md order-md-2 ml-md-auto text-md-right g-font-weight-300 g-color-gray-dark-v11 g-mb-10">
                           <div class="media align-items-start">
-                            <div class="media-body">Feb 2015 to Current</div>
+                            <div class="media-body">{{exp.from | moment("MMMM YYYY") }} to {{exp.to | moment("MMMM YYYY") }}</div>
 
                             <a class="u-link-v5 d-flex g-font-size-16 g-color-gray-light-v6 g-color-secondary--hover g-ml-30 js-fancybox" href="#!" data-src="#new-exp-form">
                               <i class="hs-admin-pencil"></i>
@@ -53,42 +46,14 @@
                         </div>
 
                         <div class="col-md order-md-1 g-mr-20 g-mb-10">
-                          <h3 class="g-font-weight-400 g-font-size-16 g-color-black mb-0">Software Engineer</h3>
+                          <h3 class="g-font-weight-400 g-font-size-16 g-color-black mb-0">{{exp.company}}</h3>
                           <em class="d-block g-font-style-normal g-color-gray-dark-v12">Apple Inc.</em>
                         </div>
                       </header>
 
-                      <p class="g-color-black mb-0">Differentiate and you stand out in a crowded marketplace. Present your uniqueness and emphasize your rare attributes in your sales copy and promotions and you’ll capture the imagination and interest of those you want to reach. In
-                        a world of copycats, it pays to be an original. It’s usually the creator.</p>
+                      <p class="g-color-black mb-0">{{exp.description}}</p>
                     </div>
-              <!-- <div class="media-body align-self-center text-right">
-                <a class="js-fancybox btn btn-xl u-btn-secondary g-width-160--md g-font-size-default g-ml-10" href="#!" data-src="#new-exp-form" data-speed="350" data-options='{"touch" : false}'>New Chapter
-                </a>
-              </div> -->
-                    <div class="g-mb-30">
-                      <header class="row">
-                        <div class="col-md order-md-2 ml-md-auto text-md-right g-font-weight-300 g-color-gray-dark-v11 g-mb-10">
-                          <div class="media align-items-start">
-                            <div class="media-body">Mar 2008 to May 2015</div>
-
-                            <a class="u-link-v5 d-flex g-font-size-16 g-color-gray-light-v6 g-color-secondary--hover g-ml-30 js-fancybox" href="#!" data-src="#new-exp-form">
-                              <i class="hs-admin-pencil"></i>
-                            </a>
-
-                            <a class="u-link-v5 d-flex g-font-size-16 g-color-gray-light-v6 g-color-secondary--hover g-ml-15" href="#">
-                              <i class="hs-admin-trash"></i>
-                            </a>
-                          </div>
-                        </div>
-
-                        <div class="col-md order-md-1 g-mr-20 g-mb-10">
-                          <h3 class="g-font-weight-400 g-font-size-16 g-color-black mb-0">Software Engineer</h3>
-                          <em class="d-block g-font-style-normal g-color-gray-dark-v12">Dropbox Inc.</em>
-                        </div>
-                      </header>
-
-                      <p class="g-color-black mb-0">The first is a non technical method which requires the use of adware removal software. Download free adware and spyware removal software and use advanced tools to help prevent getting infected.</p>
-                    </div>
+                   
                       <div class="d-flex g-mb-40">
                         <a class="u-link-v5 d-flex align-items-center g-color-secondary g-ml-30" href="#!">
                           <span class="u-badge-v2--xl g-pos-rel g-transform-origin--top-left g-bg-lightblue-v3 g-font-size-10 g-color-white">
@@ -98,9 +63,6 @@
                         </a>
                     </div>
                     <div>
-
-                      <!-- <button class="btn btn-md btn-xl--md u-btn-secondary g-width-160--md g-font-size-12 g-font-size-default--md g-mr-10 g-mb-10" type="submit">Save Changes</button>
-                      <button class="btn btn-md btn-xl--md u-btn-outline-gray-dark-v6 g-font-size-12 g-font-size-default--md g-mb-10" type="reset">Cancel</button> -->
                     </div>
                     <div class="row" v-if="show">
                       <div class="col-md-12">
@@ -171,13 +133,28 @@ export default {
     data(){
       return{
         data:"",
-        show:false
+        show:false,
+        profileInfo: null
       }
     },
     methods:{
         toggle:function(){
             this.show = !this.show;
           },
+          getProfile(id,token){
+	  		const auth = 'Bearer '+ token;
+	  		this.$http({ 
+		          method: 'GET',
+		          'url': 'http://valuedseed.org/api/teachers/'+id+'/profile',
+		          "headers":{
+		            'Authorization': auth
+		          } 
+		        }).then(response => {
+	  			this.profileInfo = response.data[0]
+	  		}).catch(error=>{
+	  			console.log(error);
+	  		})
+	  	},
 
     },
     computed:{
@@ -188,11 +165,13 @@ export default {
           return this.show ? 'Close' : 'Add More'
         },
         userData(){
-        return this.$store.getters('getUserData')
+        return this.$store.getters.getUserData
         }
     },
     mounted(){
-      //console.log(userData());
+      if(this.profileInfo == null){
+        this.getProfile(this.$store.state.auth.id,this.$store.state.auth.token)
+      }
     }
 };
 </script>

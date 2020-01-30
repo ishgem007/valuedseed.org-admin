@@ -53,15 +53,17 @@ export default {
       const formData = new FormData()
       formData.append('image_path', 'this.selectedFile, this.selectedFile.name')
       formData.append('image_path', this.selectedFile);
-      const auth = 'Bearer '+ this.$token;
+      const auth = 'Bearer '+ this.$store.state.auth.token;
       this.$http.post('http://valuedseed.org/api/users/'+uid+'/upload', formData,{
         "headers":{
                 'Authorization': auth,
                 'Content-Type': 'multipart/form-data'
         } 
       })
-      .then(response =>{
-        console.log(response.data.message)
+      .then(response => {
+        // console.log(response.data.success)
+        this.$noty.success(response.data.success)
+        location.reload();
       }).catch(error => {
         console.log(error)
       })

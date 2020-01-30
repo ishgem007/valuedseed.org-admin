@@ -50,7 +50,7 @@
             </div>
 
             <div class="row">
-                <div class="col-md-6 col-lg-4 g-mb-30" v-for="(topic,index) in this.$store.state.topics" :key="index">
+                <div class="col-md-6 col-lg-4 g-mb-30" v-for="(topic,index) in topics" :key="index">
                 <div class="card h-100 g-brd-gray-light-v7 rounded" >
                   <header class="card-header g-bg-transparent g-brd-bottom-none g-pa-20 g-pa-30--sm">
                     <div class="media g-mb-15">
@@ -92,17 +92,17 @@
 
                   <div class="card-block d-flex justify-content-between g-px-20 g-px-30--sm g-py-15 g-py-20--sm">
                     <div>
-                      <h4 class="g-line-height-1_2 g-font-weight-300 g-font-size-28 g-color-black">25</h4>
+                      <h4 class="g-line-height-1_2 g-font-weight-300 g-font-size-28 g-color-black">{{topic.number_of_qa}}</h4>
                       <em class="g-font-style-normal g-font-weight-300 g-font-size-16 g-color-gray-dark-v6">Q/A</em>
                     </div>
 
                     <div>
-                      <h4 class="g-line-height-1_2 g-font-weight-300 g-font-size-28 g-color-black">23</h4>
+                      <h4 class="g-line-height-1_2 g-font-weight-300 g-font-size-28 g-color-black">{{topic.number_of_videos}}</h4>
                       <em class="g-font-style-normal g-font-weight-300 g-font-size-16 g-color-gray-dark-v6">Videos</em>
                     </div>
 
                     <div>
-                      <h4 class="g-line-height-1_2 g-font-weight-300 g-font-size-28 g-color-black">7</h4>
+                      <h4 class="g-line-height-1_2 g-font-weight-300 g-font-size-28 g-color-black">{{topic.number_of_quiz}}</h4>
                       <em class="g-font-style-normal g-font-weight-300 g-font-size-16 g-color-gray-dark-v6">Quiz</em>
                     </div>
                   </div>
@@ -160,6 +160,35 @@
 </template>
 <script>
 export default {
-    name:"ProjectsComponent"
-};
+  data(){
+    return{
+      topics:null
+    }
+  },
+  methods:{
+    getTopics(pid,token){
+	  		const auth = 'Bearer '+ token;
+	  		this.$http({ 
+		          'method': 'GET',
+		          'url': 'http://valuedseed.org/api/products/'+pid+'/topics',
+		          "headers":{
+		            'Authorization': auth
+		          } 
+		        }).then(response => {
+            this.topics = response.data;
+	  			console.log(response.data);
+	  		}).catch(error=>{
+	  			console.log(error);
+	  		})
+	  	}
+  },
+  mounted() {
+    if(this.topics == null){
+      this.getTopics(this.$store.state.product.id,this.$store.state.auth.token);
+    }
+  },
+  destroyed(){
+     
+  }
+}
 </script>

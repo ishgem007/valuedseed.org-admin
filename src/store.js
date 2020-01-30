@@ -8,10 +8,8 @@ export default new Vuex.Store({
   plugins: [createPersistedState()],
   state: {
     auth: null,
-    portfolio:null,
     product:null,
-    topics:null,
-    profilePicture:null
+    profilePicture: null
   },
   getters:{
   	getUserData: state => {
@@ -22,31 +20,22 @@ export default new Vuex.Store({
     SET_AUTH (state, payload) {
       state.auth = payload;
     },
-    SET_PORTFOLIO (state, payload) {
-      state.profile = payload;
-    },
     SET_PRODUCT (state, payload) {
       state.product = payload;
-    },
-    SET_TOPICS (state, payload) {
-      state.topics = payload;
-    },
-    SET_PROFILE_PICTURE(){
-
     }
   },
   actions:{
-  	fetchProfilePicture({commit}){
-	  		const aut = 'Bearer '+ this.state.auth.token;
-	  		const id = this.state.auth.id;
+    getProduct({commit}, obj){
+	  		const aut = 'Bearer '+ obj.token;
+	  		const id = obj.id;
 	  		axios({
 		          'method': 'GET',
-		          'url': 'http://valuedseed.org/api/users/'+id+'/images',
+              'url': 'http://valuedseed.org/api/teachers/'+id+'/products',
 		          "headers":{
 		            'Authorization': aut
 		          } 
 		        }).then(response => {
-	  			console.log(response)
+          commit('SET_PRODUCT',response.data.data)
 	  			}).catch(error => {
 	  			console.log(error);
 	  		})

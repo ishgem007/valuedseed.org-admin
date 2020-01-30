@@ -1,10 +1,11 @@
 import Vue from 'vue'
+import * as cookies from './cookies'
 import VueRouter from 'vue-router'
-
+import store from './store'
 
 import Dashboard from '@/views/Dashboard'
 // import Profile from '@/views/Profile'
-import Interest from '@/views/Interest'
+
 import Portfolio from '@/views/Portfolio'
 import Transaction from '@/views/Transaction'
 import PaymentMethods from '@/views/PaymentMethods'
@@ -28,7 +29,7 @@ import Bankdetails from '@/views/Bankdetails'
 import Newnotification from '@/views/Newnotification'
 import Allnotification from '@/views/Allnotification'
 
-
+Vue.use(cookies)
 Vue.use(VueRouter)
 
 export default new VueRouter({
@@ -36,119 +37,216 @@ export default new VueRouter({
         {
             path: '/',
             name: 'Dashboard',
-            component: Dashboard
-
+            component: Dashboard,
+            beforeEnter: (to, from, next) => {
+                if(cookies.authenticated === 'true' || store.state.auth.authenticated === 'true') {
+                    next()
+                }else{ 
+                    next(from)
+                }
+            }
         },
         {
             path: '/profile',
             name: 'Profile',
-            component: Profile
+            component: Profile,
+            beforeEnter: (to, from, next) => {
+                if(store.state.auth.authenticated === 'false') {
+                    next(from)
+                }else{ 
+                    next()
+                }
+            }
         },
         {
             path: '/edit-profile',
             name: 'EditProfile',
-            component: EditProfile
-        },
-        {
-            path: '/Interest',
-            name: 'Interest',
-            component: Interest
+            component: EditProfile,
+            beforeEnter: (to, from, next) => {
+                if(store.state.auth.authenticated === 'false') {
+                    next('/')
+                }else{ 
+                    next()
+                }
+            }
         },
         {
             path: '/portfolio',
             name: 'Portfolio',
-            component: Portfolio
+            component: Portfolio,
+            beforeEnter: (to, from, next) => {
+                if(store.state.auth.authenticated === 'false' || store.state.auth.role === 'teacher') {
+                    next(from)
+                }else{ 
+                    next()
+                }
+            }
         },
         {
             path: '/transaction',
             name: 'Transaction',
-            component: Transaction
+            component: Transaction,
+            beforeEnter: (to, from, next) => {
+                if(store.state.auth.authenticated === 'false' || store.state.auth.role === 'teacher') {
+                    next(from)
+                }else{ 
+                    next()
+                }
+            }
         },
         {
             path: '/payment-methods',
             name: 'PaymentMethods',
-            component: PaymentMethods
+            component: PaymentMethods,
+            beforeEnter: (to, from, next) => {
+                
+            }
         },
         {
             path: '/upload-profile-photo',
             name: 'Photo',
-            component: Photo
+            component: Photo,
+            beforeEnter: (to, from, next) => {
+                if(store.state.auth.authenticated === 'false') {
+                    next('/')
+                }else{ 
+                    next()
+                }
+            }
         },
         {
             path: '/all-projects',
             name: 'Projects',
-            component: Projects
+            component: Projects,
+            beforeEnter: (to, from, next) => {
+                if(store.state.auth.authenticated === 'false' || store.state.auth.role === 'teacher') {
+                    next(from)
+                }else{ 
+                    next()
+                }
+            }
         },
         {
             path: '/change-password',
             name: 'ChangePassword',
-            component: ChangePassword
+            component: ChangePassword,
+            beforeEnter: (to, from, next) => {
+                if(store.state.auth.authenticated === 'false') {
+                    next('/')
+                }else{ 
+                    next()
+                }
+            }
         },
         {
             path: '/newuser',
             name: 'Newuser',
-            component: Newuser
+            component: Newuser,
+            beforeEnter: (to, from, next) => {
+                
+            }
         },
         {
             path: '/allusers',
             name: 'Allusers',
-            component: Allusers
+            component: Allusers,
+            beforeEnter: (to, from, next) => {
+                
+            }
         },
         {
             path: '/bankdetails',
             name: 'Bankdetails',
-            component: Bankdetails
+            component: Bankdetails,
+            beforeEnter: (to, from, next) => {
+                if(store.state.auth.authenticated === 'false' || store.state.auth.role === 'teacher') from
+                else next()
+            }
         },
         {
             path: '/notification',
             name: 'Notification',
-            component: Notification
+            component: Notification,
+            beforeEnter: (to, from, next) => {
+                
+            }
         },
         {
 
             path: '/newnotification',
             name: 'Newnotification',
-            component: Newnotification
+            component: Newnotification,
+            beforeEnter: (to, from, next) => {
+                
+            }
         },
         {
             path: '/allnotification',
             name: 'Allnotification',
-            component: Allnotification
+            component: Allnotification,
+            beforeEnter: (to, from, next) => {
+                if(store.state.auth.authenticated === 'false') {
+                    next('/')
+                }else{ 
+                    next()
+                }
+            }
         },
         {
             path: '/all-teachers',
             name: 'Teachers',
-            component: Teachers
+            component: Teachers,
+            beforeEnter: (to, from, next) => {
+                
+            }
         },
         {
             path: '/for-single-subject',
             name: 'Subject',
-            component: Subject
+            component: Subject,
+            beforeEnter: (to, from, next) => {
+                
+            }
         },
         {
             path: '/all-subtopics',
             name: 'Chapter',
-            component: Chapter
+            component: Chapter,
+            beforeEnter: (to, from, next) => {
+                
+            }
         },
         {
             path: '/subjects-and-teacher',
             name: 'SubjectByTeacher',
-            component: SubjectByTeacher
+            component: SubjectByTeacher,
+            beforeEnter: (to, from, next) => {
+                
+            }
         },
         {
             path: '/completed-subjects',
             name: 'CompletedSubject',
-            component: CompletedSubject
+            component: CompletedSubject,
+            beforeEnter: (to, from, next) => {
+                
+            }
         },
         {
             path: '/ongoing-subjects',
             name: 'OngoingSubject',
-            component: OngoingSubject
+            component: OngoingSubject,
+            beforeEnter: (to, from, next) => {
+                
+            }
         },
         {
             path: '/store',
             name: 'Store',
-            component: Store
+            component: Store,
+            beforeEnter: (to, from, next) => {
+                
+            }
         }
     ],
     mode: 'history',
